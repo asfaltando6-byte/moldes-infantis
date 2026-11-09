@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1180" viewBox="0 0 900 1180">
+  <rect width="900" height="1180" rx="34" fill="#fffaf7"/>
+  <rect x="30" y="30" width="840" height="1120" rx="28" fill="none" stroke="#e7c5cf" stroke-width="3"/>
+  <text x="55" y="78" font-family="Montserrat,Arial,sans-serif" font-size="25" font-weight="900" fill="#94465f">PEQUENOS LOOKS</text>
+  <rect x="724" y="47" width="116" height="43" rx="21" fill="#b85c79"/><text x="782" y="75" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="#fff">REF. 001</text>
+  <text x="450" y="132" text-anchor="middle" font-family="Montserrat,Arial,sans-serif" font-size="33" font-weight="900" fill="#3b2730">Vestido Infantil de Festa</text>
+  <text x="225" y="180" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="#8d596a">FRENTE</text>
+  <text x="575" y="180" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="#8d596a">COSTAS</text>
+  
+  <g transform="translate(78 160)">
+    <path d="M115 20 Q150 5 185 20 L205 58 L232 82 L214 118 L193 106 L198 168 Q230 220 250 305 Q150 330 50 305 Q70 220 102 168 L107 106 L86 118 L68 82 L95 58 Z" fill="#f8e6eb" stroke="#5a3c47" stroke-width="4"/>
+    <path d="M115 20 Q150 55 185 20 M103 168 Q150 186 197 168 M150 170 L150 316" fill="none" stroke="#5a3c47" stroke-width="3"/>
+    <path d="M124 144 Q150 122 176 144 Q150 163 124 144Z" fill="none" stroke="#b85c79" stroke-width="3"/>
+  </g>
+  <g transform="translate(430 160)">
+    <path d="M115 20 Q150 5 185 20 L205 58 L232 82 L214 118 L193 106 L198 168 Q230 220 250 305 Q150 330 50 305 Q70 220 102 168 L107 106 L86 118 L68 82 L95 58 Z" fill="#fff7f9" stroke="#5a3c47" stroke-width="4"/>
+    <path d="M150 30 L150 168 M103 168 Q150 186 197 168" fill="none" stroke="#5a3c47" stroke-width="3" stroke-dasharray="8 7"/>
+    <circle cx="150" cy="70" r="5" fill="#5a3c47"/><circle cx="150" cy="92" r="5" fill="#5a3c47"/>
+  </g>
+  <rect x="55" y="555" width="790" height="150" rx="20" fill="#fff" stroke="#ead4db" stroke-width="2"/>
+  <text x="80" y="592" font-family="Arial,sans-serif" font-size="19" font-weight="800" fill="#9d4e68">DETALHES DA REFERÊNCIA</text>
+  <circle cx="90" cy="625" r="4.5" fill="#b85c79"/><text x="108" y="632" font-family="Arial,sans-serif" font-size="17" fill="#4d3941">Manga curta com babado</text><circle cx="90" cy="649" r="4.5" fill="#b85c79"/><text x="108" y="656" font-family="Arial,sans-serif" font-size="17" fill="#4d3941">Cintura marcada com faixa</text><circle cx="90" cy="673" r="4.5" fill="#b85c79"/><text x="108" y="680" font-family="Arial,sans-serif" font-size="17" fill="#4d3941">Saia rodada e franzida</text><circle cx="90" cy="697" r="4.5" fill="#b85c79"/><text x="108" y="704" font-family="Arial,sans-serif" font-size="17" fill="#4d3941">Fechamento nas costas</text>
+  <text x="55" y="742" font-family="Arial,sans-serif" font-size="19" font-weight="800" fill="#9d4e68">PARTES DO MOLDE</text>
+  <g transform="translate(70 760)"><path d="M10 15 Q70 0 135 18 L125 86 Q70 102 16 84Z" fill="#fff" stroke="#b85c79" stroke-width="2.5" stroke-dasharray="7 5"/><text x="72" y="57" text-anchor="middle" font-size="18" font-weight="700" fill="#5a3c47">Frente</text></g><g transform="translate(280 760)"><path d="M10 15 Q70 0 135 18 L125 86 Q70 102 16 84Z" fill="#fff" stroke="#b85c79" stroke-width="2.5" stroke-dasharray="7 5"/><text x="72" y="57" text-anchor="middle" font-size="18" font-weight="700" fill="#5a3c47">Costas</text></g><g transform="translate(490 760)"><path d="M10 15 Q70 0 135 18 L125 86 Q70 102 16 84Z" fill="#fff" stroke="#b85c79" stroke-width="2.5" stroke-dasharray="7 5"/><text x="72" y="57" text-anchor="middle" font-size="18" font-weight="700" fill="#5a3c47">Manga</text></g><g transform="translate(70 880)"><path d="M10 15 Q70 0 135 18 L125 86 Q70 102 16 84Z" fill="#fff" stroke="#b85c79" stroke-width="2.5" stroke-dasharray="7 5"/><text x="72" y="57" text-anchor="middle" font-size="18" font-weight="700" fill="#5a3c47">Saia</text></g><g transform="translate(280 880)"><path d="M10 15 Q70 0 135 18 L125 86 Q70 102 16 84Z" fill="#fff" stroke="#b85c79" stroke-width="2.5" stroke-dasharray="7 5"/><text x="72" y="57" text-anchor="middle" font-size="18" font-weight="700" fill="#5a3c47">Faixa</text></g><g transform="translate(490 880)"><path d="M10 15 Q70 0 135 18 L125 86 Q70 102 16 84Z" fill="#fff" stroke="#b85c79" stroke-width="2.5" stroke-dasharray="7 5"/><text x="72" y="57" text-anchor="middle" font-size="18" font-weight="700" fill="#5a3c47">Laço</text></g>
+  <rect x="55" y="1006" width="790" height="100" rx="18" fill="#f7e9ed"/>
+  <text x="450" y="1044" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="800" fill="#5a3c47">Referência visual para modelagem e costura</text>
+  <text x="450" y="1074" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" fill="#725963">Use como inspiração para proporções, recortes, acabamentos e combinações.</text>
+  </svg>
