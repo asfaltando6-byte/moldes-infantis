@@ -70,7 +70,19 @@ details p{font-size:11px}
   h2{font-size:31px}
 }
 </style>
-</head>
+<style id="refs-carousel-live">
+.carousel-shell{width:min(1180px,100%);margin:auto;padding:0 16px}
+.refs-carousel{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(250px,30vw);gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding:10px 4px 18px;scrollbar-width:none}
+.refs-carousel::-webkit-scrollbar{display:none}
+.ref-card{scroll-snap-align:start}
+.ref-image{width:100%;aspect-ratio:3/4;object-fit:cover;background:#fff4f6;display:block}
+.ref-label{font-size:9px;color:var(--rose);font-weight:900;letter-spacing:.8px}
+.carousel-nav{display:flex;justify-content:center;align-items:center;gap:12px}
+.carousel-nav button{width:36px;height:36px;border-radius:50%;border:1px solid var(--line);background:#fff;color:var(--rose);font-size:22px;font-weight:900}
+.carousel-nav span{font-size:11px;font-weight:800;color:var(--muted)}
+@media(max-width:760px){.refs-carousel{grid-auto-columns:78vw}}
+@media(max-width:390px){.refs-carousel{grid-auto-columns:84vw}}
+</style></head>
 <body>
 <main>
 <section class="hero">
@@ -95,10 +107,43 @@ details p{font-size:11px}
   <div class="wrap">
     <span class="kicker">Referências para costureiras</span>
     <h2>10 modelos diferentes</h2>
-    <p class="center">Cada imagem será publicada somente depois de ser comparada com a versão aprovada no chat.</p>
-    <div class="grid refs">
-      <article class="card"><div class="placeholder">Referência 01 — aguardando imagem validada</div><div class="card-body"><h3>Modelo infantil 01</h3><p>Peça, detalhes e acabamento serão definidos na reconstrução.</p></div></article><article class="card"><div class="placeholder">Referência 02 — aguardando imagem validada</div><div class="card-body"><h3>Modelo infantil 02</h3><p>Peça, detalhes e acabamento serão definidos na reconstrução.</p></div></article><article class="card"><div class="placeholder">Referência 03 — aguardando imagem validada</div><div class="card-body"><h3>Modelo infantil 03</h3><p>Peça, detalhes e acabamento serão definidos na reconstrução.</p></div></article><article class="card"><div class="placeholder">Referência 04 — aguardando imagem validada</div><div class="card-body"><h3>Modelo infantil 04</h3><p>Peça, detalhes e acabamento serão definidos na reconstrução.</p></div></article><article class="card"><div class="placeholder">Referência 05 — aguardando imagem validada</div><div class="card-body"><h3>Modelo infantil 05</h3><p>Peça, detalhes e acabamento serão definidos na reconstrução.</p></div></article><article class="card"><div class="placeholder">Referência 06 — aguardando imagem validada</div><div class="card-body"><h3>Modelo infantil 06</h3><p>Peça, detalhes e acabamento serão definidos na reconstrução.</p></div></article><article class="card"><div class="placeholder">Referência 07 — aguardando imagem validada</div><div class="card-body"><h3>Modelo infantil 07</h3><p>Peça, detalhes e acabamento serão definidos na reconstrução.</p></div></article><article class="card"><div class="placeholder">Referência 08 — aguardando imagem validada</div><div class="card-body"><h3>Modelo infantil 08</h3><p>Peça, detalhes e acabamento serão definidos na reconstrução.</p></div></article><article class="card"><div class="placeholder">Referência 09 — aguardando imagem validada</div><div class="card-body"><h3>Modelo infantil 09</h3><p>Peça, detalhes e acabamento serão definidos na reconstrução.</p></div></article><article class="card"><div class="placeholder">Referência 10 — aguardando imagem validada</div><div class="card-body"><h3>Modelo infantil 10</h3><p>Peça, detalhes e acabamento serão definidos na reconstrução.</p></div></article>
+    <p class="center">Modelos variados para observar cortes, caimento, detalhes, acabamentos e combinações antes de adaptar às suas próprias criações.</p>
+  </div>
+  <div class="carousel-shell">
+    <div class="refs-carousel" id="refsCarousel">
+      <article class="card ref-card">
+        <img class="ref-image" src="assets/site-ref-01.webp" alt="Vestido clássico infantil" loading="eager" decoding="async">
+        <div class="card-body"><span class="ref-label">REFERÊNCIA 01</span><h3>Vestido clássico infantil</h3><p>Inspiração visual para costureiras, com foco no modelo e nos detalhes da peça.</p></div>
+      </article><article class="card ref-card">
+        <img class="ref-image" src="assets/site-ref-02.webp" alt="Vestido casual delicado" loading="eager" decoding="async">
+        <div class="card-body"><span class="ref-label">REFERÊNCIA 02</span><h3>Vestido casual delicado</h3><p>Inspiração visual para costureiras, com foco no modelo e nos detalhes da peça.</p></div>
+      </article><article class="card ref-card">
+        <img class="ref-image" src="assets/site-ref-03.webp" alt="Vestido em camadas" loading="lazy" decoding="async">
+        <div class="card-body"><span class="ref-label">REFERÊNCIA 03</span><h3>Vestido em camadas</h3><p>Inspiração visual para costureiras, com foco no modelo e nos detalhes da peça.</p></div>
+      </article><article class="card ref-card">
+        <img class="ref-image" src="assets/site-ref-04.webp" alt="Conjunto blusa + short" loading="lazy" decoding="async">
+        <div class="card-body"><span class="ref-label">REFERÊNCIA 04</span><h3>Conjunto blusa + short</h3><p>Inspiração visual para costureiras, com foco no modelo e nos detalhes da peça.</p></div>
+      </article><article class="card ref-card">
+        <img class="ref-image" src="assets/site-ref-05.webp" alt="Conjunto social menino" loading="lazy" decoding="async">
+        <div class="card-body"><span class="ref-label">REFERÊNCIA 05</span><h3>Conjunto social menino</h3><p>Inspiração visual para costureiras, com foco no modelo e nos detalhes da peça.</p></div>
+      </article><article class="card ref-card">
+        <img class="ref-image" src="assets/site-ref-06.webp" alt="Macaquinho infantil" loading="lazy" decoding="async">
+        <div class="card-body"><span class="ref-label">REFERÊNCIA 06</span><h3>Macaquinho infantil</h3><p>Inspiração visual para costureiras, com foco no modelo e nos detalhes da peça.</p></div>
+      </article><article class="card ref-card">
+        <img class="ref-image" src="assets/site-ref-07.webp" alt="Jardineira infantil" loading="lazy" decoding="async">
+        <div class="card-body"><span class="ref-label">REFERÊNCIA 07</span><h3>Jardineira infantil</h3><p>Inspiração visual para costureiras, com foco no modelo e nos detalhes da peça.</p></div>
+      </article><article class="card ref-card">
+        <img class="ref-image" src="assets/site-ref-08.webp" alt="Conjunto com saia" loading="lazy" decoding="async">
+        <div class="card-body"><span class="ref-label">REFERÊNCIA 08</span><h3>Conjunto com saia</h3><p>Inspiração visual para costureiras, com foco no modelo e nos detalhes da peça.</p></div>
+      </article><article class="card ref-card">
+        <img class="ref-image" src="assets/site-ref-09.webp" alt="Look infantil coordenado" loading="lazy" decoding="async">
+        <div class="card-body"><span class="ref-label">REFERÊNCIA 09</span><h3>Look infantil coordenado</h3><p>Inspiração visual para costureiras, com foco no modelo e nos detalhes da peça.</p></div>
+      </article><article class="card ref-card">
+        <img class="ref-image" src="assets/site-ref-10.webp" alt="Vestido de festa" loading="lazy" decoding="async">
+        <div class="card-body"><span class="ref-label">REFERÊNCIA 10</span><h3>Vestido de festa</h3><p>Inspiração visual para costureiras, com foco no modelo e nos detalhes da peça.</p></div>
+      </article>
     </div>
+    <div class="carousel-nav"><button type="button" id="refsPrev" aria-label="Referência anterior">‹</button><span id="refsCount">1 / 10</span><button type="button" id="refsNext" aria-label="Próxima referência">›</button></div>
   </div>
 </section>
 
@@ -165,5 +210,16 @@ details p{font-size:11px}
   </div>
 </section>
 </main>
-</body>
+<script id="refs-carousel-js">
+(()=>{
+ const t=document.getElementById('refsCarousel'),p=document.getElementById('refsPrev'),n=document.getElementById('refsNext'),c=document.getElementById('refsCount');
+ if(!t||!p||!n||!c)return;
+ const cards=[...t.children];
+ const step=()=>cards[0]?.getBoundingClientRect().width+14||300;
+ const sync=()=>{let best=0,d=Infinity;cards.forEach((el,i)=>{const x=Math.abs(el.getBoundingClientRect().left-t.getBoundingClientRect().left);if(x<d){d=x;best=i}});c.textContent=(best+1)+' / '+cards.length};
+ p.onclick=()=>t.scrollBy({left:-step(),behavior:'smooth'});
+ n.onclick=()=>t.scrollBy({left:step(),behavior:'smooth'});
+ t.addEventListener('scroll',()=>requestAnimationFrame(sync),{passive:true});sync();
+})();
+</script></body>
 </html>
