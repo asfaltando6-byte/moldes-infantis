@@ -1,4 +1,4 @@
-# Pequenos Vestidos — cartilha de referências infantis
+# Pequenos Looks — cartilha de referências infantis
 
 Página de vendas mobile-first em HTML único, disponível em `index.html`.
 
@@ -6,12 +6,22 @@ Página de vendas mobile-first em HTML único, disponível em `index.html`.
 Importe o repositório no Vercel com **Framework Preset: Other** e **Root Directory: .**. Não é necessário build.
 
 ## Configuração do checkout
-Dentro de `index.html`, localize `const CONFIG={essencial:{checkout:""},completa:{checkout:""}};` e preencha os endereços HTTPS dos planos.
+Dentro de `index.html`, localize:
+`const CONFIG={essencial:{checkout:""},completa:{checkout:""}};`
 
-## Conteúdo e revisão antes de ativar vendas
-- Página demonstrativa; os arquivos PDF das cartilhas, 60/180 referências e três bônus **não** estão incluídos.
-- As amostras do carrossel são ilustrativas e não representam fichas técnicas, moldes de costura ou os PDFs finais.
-- Fotografias de referência são carregadas externamente, dependendo da disponibilidade dos provedores. Substitua por fotos próprias/autorizadas e coerentes com os produtos reais.
-- Revise os preços R$7,90 e R$19,90, quantidades, entrega, política de compra, termos e checkout antes de publicar anúncios.
-- O antigo CTA “Conhecer o catálogo” não foi incluído.
-- Fonte Montserrat, títulos centralizados e layout prioritariamente para mobile.
+Preencha os links HTTPS dos planos antes de ativar as vendas.
+
+## Estrutura atual
+- Plano básico com **60 referências**.
+- Plano premium com **120 referências**.
+- **5 bônus** visuais.
+- Primeiro carrossel com **10 referências para costureiras**.
+- Segundo carrossel com **8 estilos de roupas infantis**.
+- Todas as imagens usadas no HTML são locais ao repositório; não há hotlink de imagens externas.
+- Fonte Montserrat, títulos centralizados e layout prioritariamente mobile.
+
+## Revisão antes de vender
+- Confirmar os arquivos finais entregáveis.
+- Confirmar links de checkout e fluxo de entrega.
+- Revisar preços, garantia, termos e atendimento.
+- Validar o deploy de produção e testar em celular real.
