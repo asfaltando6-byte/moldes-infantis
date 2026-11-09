@@ -90,6 +90,18 @@ button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid #d2
 </style><style id="asset-rendering-fix">
 .sewing-photo img[src$=".svg"],.ready-photo img[src$=".svg"]{object-fit:contain!important;padding:8px;background:#fffaf7}
 .sewing-track:focus-visible,.ready-track:focus-visible{outline:3px solid #d27c98;outline-offset:-3px;border-radius:14px}
+</style><style id="sewing-sprite-v6">
+.sewing-photo.sewing-sprite{
+  height:420px;
+  background-image:url('assets/referencias-costureiras.webp');
+  background-repeat:no-repeat;
+  background-size:200% 500%;
+  background-position:var(--sx) var(--sy);
+  background-color:#f7e8e6;
+}
+.sewing-slide{overflow:hidden}
+@media(max-width:420px){.sewing-photo.sewing-sprite{height:390px}}
+@media(max-width:360px){.sewing-photo.sewing-sprite{height:350px}}
 </style></head>
 <body>
 <main>
@@ -114,35 +126,35 @@ button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid #d2
 <div class="sewing-carousel" role="region" aria-label="Carrossel de referências para costureiras">
 <div class="sewing-track" id="sewingTrack" tabindex="0" aria-label="10 referências de roupas infantis">
 <article class="sewing-slide">
-<div class="sewing-photo"><img width="900" height="1180" src="assets/referencia-costura-01.svg" alt="Vestido infantil de festa" loading="eager" decoding="async" onerror="this.onerror=null;this.src='assets/mockup-pequenos-looks.webp'"></div>
-<div class="sewing-body"><span class="sewing-ref">REFERÊNCIA 01</span><h3>Vestido infantil de festa</h3><div class="sewing-tags"><span>Saia rodada</span><span>Manga</span><span>Laço</span><span>Acabamento</span></div><p>Referência visual para observar detalhes do modelo e adaptar à sua própria confecção.</p></div>
+<div class="sewing-photo sewing-sprite" role="img" aria-label="Vestido de festa com laço" style="--sx:0%;--sy:0%"></div>
+<div class="sewing-body"><span class="sewing-ref">REFERÊNCIA 01</span><h3>Vestido de festa com laço</h3><div class="sewing-tags"><span>Manga bufante</span><span>Cintura marcada</span><span>Saia rodada</span><span>Detalhes florais</span></div><p>Modelo visual para observar composição, acabamento e detalhes antes de adaptar à sua própria confecção.</p></div>
 </article><article class="sewing-slide">
-<div class="sewing-photo"><img width="900" height="1180" src="assets/referencia-costura-02.svg" alt="Conjunto social infantil" loading="eager" decoding="async" onerror="this.onerror=null;this.src='assets/mockup-pequenos-looks.webp'"></div>
-<div class="sewing-body"><span class="sewing-ref">REFERÊNCIA 02</span><h3>Conjunto social infantil</h3><div class="sewing-tags"><span>Camisa</span><span>Bermuda</span><span>Gola</span><span>Bolso</span></div><p>Referência visual para observar detalhes do modelo e adaptar à sua própria confecção.</p></div>
+<div class="sewing-photo sewing-sprite" role="img" aria-label="Vestido floral com babado" style="--sx:100%;--sy:0%"></div>
+<div class="sewing-body"><span class="sewing-ref">REFERÊNCIA 02</span><h3>Vestido floral com babado</h3><div class="sewing-tags"><span>Manga em babado</span><span>Barra franzida</span><span>Laço lateral</span><span>Caimento leve</span></div><p>Modelo visual para observar composição, acabamento e detalhes antes de adaptar à sua própria confecção.</p></div>
 </article><article class="sewing-slide">
-<div class="sewing-photo"><img width="900" height="1180" src="assets/referencia-costura-03.svg" alt="Conjunto casual infantil" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='assets/mockup-pequenos-looks.webp'"></div>
-<div class="sewing-body"><span class="sewing-ref">REFERÊNCIA 03</span><h3>Conjunto casual infantil</h3><div class="sewing-tags"><span>Blusa</span><span>Short</span><span>Combinação</span><span>Caimento</span></div><p>Referência visual para observar detalhes do modelo e adaptar à sua própria confecção.</p></div>
+<div class="sewing-photo sewing-sprite" role="img" aria-label="Vestido em camadas" style="--sx:0%;--sy:25%"></div>
+<div class="sewing-body"><span class="sewing-ref">REFERÊNCIA 03</span><h3>Vestido em camadas</h3><div class="sewing-tags"><span>Babados amplos</span><span>Saia em níveis</span><span>Manga volumosa</span><span>Acabamento delicado</span></div><p>Modelo visual para observar composição, acabamento e detalhes antes de adaptar à sua própria confecção.</p></div>
 </article><article class="sewing-slide">
-<div class="sewing-photo"><img width="900" height="1180" src="assets/referencia-costura-04.svg" alt="Macaquinho infantil" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='assets/mockup-pequenos-looks.webp'"></div>
-<div class="sewing-body"><span class="sewing-ref">REFERÊNCIA 04</span><h3>Macaquinho infantil</h3><div class="sewing-tags"><span>Peça única</span><span>Alças</span><span>Bolso</span><span>Modelagem</span></div><p>Referência visual para observar detalhes do modelo e adaptar à sua própria confecção.</p></div>
+<div class="sewing-photo sewing-sprite" role="img" aria-label="Conjunto blusa + short" style="--sx:100%;--sy:25%"></div>
+<div class="sewing-body"><span class="sewing-ref">REFERÊNCIA 04</span><h3>Conjunto blusa + short</h3><div class="sewing-tags"><span>Peplum</span><span>Short estruturado</span><span>Laço frontal</span><span>Bolsos</span></div><p>Modelo visual para observar composição, acabamento e detalhes antes de adaptar à sua própria confecção.</p></div>
 </article><article class="sewing-slide">
-<div class="sewing-photo"><img width="900" height="1180" src="assets/referencia-costura-01.webp" alt="Referência visual de vestido infantil" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='assets/mockup-pequenos-looks.webp'"></div>
-<div class="sewing-body"><span class="sewing-ref">REFERÊNCIA 05</span><h3>Referência visual de vestido infantil</h3><div class="sewing-tags"><span>Detalhes</span><span>Costura</span><span>Volume</span><span>Acabamento</span></div><p>Referência visual para observar detalhes do modelo e adaptar à sua própria confecção.</p></div>
+<div class="sewing-photo sewing-sprite" role="img" aria-label="Conjunto social menino" style="--sx:0%;--sy:50%"></div>
+<div class="sewing-body"><span class="sewing-ref">REFERÊNCIA 05</span><h3>Conjunto social menino</h3><div class="sewing-tags"><span>Camisa social</span><span>Suspensório</span><span>Bermuda</span><span>Gravata borboleta</span></div><p>Modelo visual para observar composição, acabamento e detalhes antes de adaptar à sua própria confecção.</p></div>
 </article><article class="sewing-slide">
-<div class="sewing-photo"><img width="900" height="1180" src="assets/referencia-costura-02.webp" alt="Referência visual de conjunto infantil" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='assets/mockup-pequenos-looks.webp'"></div>
-<div class="sewing-body"><span class="sewing-ref">REFERÊNCIA 06</span><h3>Referência visual de conjunto infantil</h3><div class="sewing-tags"><span>Conjunto</span><span>Estrutura</span><span>Gola</span><span>Bermuda</span></div><p>Referência visual para observar detalhes do modelo e adaptar à sua própria confecção.</p></div>
+<div class="sewing-photo sewing-sprite" role="img" aria-label="Macaquinho floral" style="--sx:100%;--sy:50%"></div>
+<div class="sewing-body"><span class="sewing-ref">REFERÊNCIA 06</span><h3>Macaquinho floral</h3><div class="sewing-tags"><span>Alças largas</span><span>Botões</span><span>Bolsos frontais</span><span>Elástico nas pernas</span></div><p>Modelo visual para observar composição, acabamento e detalhes antes de adaptar à sua própria confecção.</p></div>
 </article><article class="sewing-slide">
-<div class="sewing-photo"><img width="900" height="1180" src="assets/referencia-costura-03.webp" alt="Referência visual de look infantil" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='assets/mockup-pequenos-looks.webp'"></div>
-<div class="sewing-body"><span class="sewing-ref">REFERÊNCIA 07</span><h3>Referência visual de look infantil</h3><div class="sewing-tags"><span>Look</span><span>Cores</span><span>Peças</span><span>Combinação</span></div><p>Referência visual para observar detalhes do modelo e adaptar à sua própria confecção.</p></div>
+<div class="sewing-photo sewing-sprite" role="img" aria-label="Jardineira floral" style="--sx:0%;--sy:75%"></div>
+<div class="sewing-body"><span class="sewing-ref">REFERÊNCIA 07</span><h3>Jardineira floral</h3><div class="sewing-tags"><span>Peitilho</span><span>Bolso frontal</span><span>Alças com botões</span><span>Saia ampla</span></div><p>Modelo visual para observar composição, acabamento e detalhes antes de adaptar à sua própria confecção.</p></div>
 </article><article class="sewing-slide">
-<div class="sewing-photo"><img width="900" height="1180" src="assets/referencia-costura-04.webp" alt="Referência visual de macaquinho infantil" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='assets/mockup-pequenos-looks.webp'"></div>
-<div class="sewing-body"><span class="sewing-ref">REFERÊNCIA 08</span><h3>Referência visual de macaquinho infantil</h3><div class="sewing-tags"><span>Macaquinho</span><span>Conforto</span><span>Recortes</span><span>Detalhes</span></div><p>Referência visual para observar detalhes do modelo e adaptar à sua própria confecção.</p></div>
+<div class="sewing-photo sewing-sprite" role="img" aria-label="Vestido com gola clássica" style="--sx:100%;--sy:75%"></div>
+<div class="sewing-body"><span class="sewing-ref">REFERÊNCIA 08</span><h3>Vestido com gola clássica</h3><div class="sewing-tags"><span>Gola arredondada</span><span>Botões frontais</span><span>Manga bufante</span><span>Laço</span></div><p>Modelo visual para observar composição, acabamento e detalhes antes de adaptar à sua própria confecção.</p></div>
 </article><article class="sewing-slide">
-<div class="sewing-photo"><img width="900" height="675" src="assets/amostras-pequenos-looks.webp" alt="Painel de referências infantis" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='assets/mockup-pequenos-looks.webp'"></div>
-<div class="sewing-body"><span class="sewing-ref">REFERÊNCIA 09</span><h3>Painel de referências infantis</h3><div class="sewing-tags"><span>Referências</span><span>Modelos</span><span>Variações</span><span>Inspiração</span></div><p>Referência visual para observar detalhes do modelo e adaptar à sua própria confecção.</p></div>
+<div class="sewing-photo sewing-sprite" role="img" aria-label="Conjunto floral com short" style="--sx:0%;--sy:100%"></div>
+<div class="sewing-body"><span class="sewing-ref">REFERÊNCIA 09</span><h3>Conjunto floral com short</h3><div class="sewing-tags"><span>Blusa soltinha</span><span>Short com pregas</span><span>Laço central</span><span>Manga babada</span></div><p>Modelo visual para observar composição, acabamento e detalhes antes de adaptar à sua própria confecção.</p></div>
 </article><article class="sewing-slide">
-<div class="sewing-photo"><img width="1200" height="900" src="assets/mockup-pequenos-looks.webp" alt="Visão geral da coleção de referências" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='assets/mockup-pequenos-looks.webp'"></div>
-<div class="sewing-body"><span class="sewing-ref">REFERÊNCIA 10</span><h3>Visão geral da coleção de referências</h3><div class="sewing-tags"><span>Composição</span><span>Roupas</span><span>Detalhes</span><span>Coleção</span></div><p>Referência visual para observar detalhes do modelo e adaptar à sua própria confecção.</p></div>
+<div class="sewing-photo sewing-sprite" role="img" aria-label="Vestido de luxo com renda" style="--sx:100%;--sy:100%"></div>
+<div class="sewing-body"><span class="sewing-ref">REFERÊNCIA 10</span><h3>Vestido de luxo com renda</h3><div class="sewing-tags"><span>Renda aplicada</span><span>Manga bufante</span><span>Laço estruturado</span><span>Saia volumosa</span></div><p>Modelo visual para observar composição, acabamento e detalhes antes de adaptar à sua própria confecção.</p></div>
 </article>
 </div>
 <div class="carousel-controls"><button type="button" id="sewingPrev" aria-label="Anterior">‹</button><div class="carousel-count" id="sewingCount" aria-live="polite">1 / 10</div><button type="button" id="sewingNext" aria-label="Próximo">›</button></div>
