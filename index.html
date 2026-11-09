@@ -87,6 +87,9 @@ button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid #d2
   .sewing-photo{height:320px}
   .ready-photo{height:220px}
 }
+</style><style id="asset-rendering-fix">
+.sewing-photo img[src$=".svg"],.ready-photo img[src$=".svg"]{object-fit:contain!important;padding:8px;background:#fffaf7}
+.sewing-track:focus-visible,.ready-track:focus-visible{outline:3px solid #d27c98;outline-offset:-3px;border-radius:14px}
 </style></head>
 <body>
 <main>
@@ -108,8 +111,8 @@ button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid #d2
 <h2>10 referências pensadas para costureiras</h2>
 <p class="center">Modelos para observar forma, caimento, mangas, saias, bolsos, laços, combinações e acabamentos antes de criar sua própria peça.</p>
 </div></section>
-<div class="sewing-carousel">
-<div class="sewing-track" id="sewingTrack">
+<div class="sewing-carousel" role="region" aria-label="Carrossel de referências para costureiras">
+<div class="sewing-track" id="sewingTrack" tabindex="0" aria-label="10 referências de roupas infantis">
 <article class="sewing-slide">
 <div class="sewing-photo"><img width="900" height="1180" src="assets/referencia-costura-01.svg" alt="Vestido infantil de festa" loading="eager" decoding="async" onerror="this.onerror=null;this.src='assets/mockup-pequenos-looks.webp'"></div>
 <div class="sewing-body"><span class="sewing-ref">REFERÊNCIA 01</span><h3>Vestido infantil de festa</h3><div class="sewing-tags"><span>Saia rodada</span><span>Manga</span><span>Laço</span><span>Acabamento</span></div><p>Referência visual para observar detalhes do modelo e adaptar à sua própria confecção.</p></div>
@@ -142,7 +145,7 @@ button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid #d2
 <div class="sewing-body"><span class="sewing-ref">REFERÊNCIA 10</span><h3>Visão geral da coleção de referências</h3><div class="sewing-tags"><span>Composição</span><span>Roupas</span><span>Detalhes</span><span>Coleção</span></div><p>Referência visual para observar detalhes do modelo e adaptar à sua própria confecção.</p></div>
 </article>
 </div>
-<div class="carousel-controls"><button type="button" id="sewingPrev" aria-label="Anterior">‹</button><div class="carousel-count" id="sewingCount">1 / 10</div><button type="button" id="sewingNext" aria-label="Próximo">›</button></div>
+<div class="carousel-controls"><button type="button" id="sewingPrev" aria-label="Anterior">‹</button><div class="carousel-count" id="sewingCount" aria-live="polite">1 / 10</div><button type="button" id="sewingNext" aria-label="Próximo">›</button></div>
 <div class="carousel-hint">Deslize para ver as 10 referências</div>
 </div>
 <section><div class="wrap"><span class="kicker">Para quem é</span><h2>Feita para quem ama criar roupas infantis</h2><div class="cards"><div class="card"><div class="card-mark">01</div><h3>Costureiras e artesãs</h3><p>Que desejam encontrar referências de estilos e detalhes com mais facilidade.</p></div><div class="card"><div class="card-mark">02</div><h3>Quem está começando</h3><p>Que procura ideias para estudar combinações e desenvolver o próprio olhar criativo.</p></div><div class="card"><div class="card-mark">03</div><h3>Quem trabalha com moda infantil</h3><p>Que gosta de pesquisar inspirações antes de desenvolver novas peças.</p></div></div></div></section>
@@ -155,17 +158,29 @@ button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid #d2
 </div><p class="notice"><b>Importante:</b> página demonstrativa. As 60/120 referências e os cinco bônus são entregáveis planejados, ainda a produzir e revisar antes das vendas. Não são moldes técnicos de costura.</p></div></section>
 <section class="guarantee"><div class="wrap"><div class="shield">♢</div><span class="kicker">Compra protegida</span><h2>Garantia de 7 dias</h2><p class="center">Nas compras realizadas online, você pode exercer o direito de arrependimento dentro de 7 dias corridos, conforme a legislação aplicável.</p><p class="center" style="font-size:10px">O procedimento de solicitação e o contato de atendimento devem acompanhar o checkout final.</p></div></section>
 <section class="soft ready-section"><div class="wrap"><span class="kicker">Ideias para se inspirar</span><h2>Roupas infantis para diferentes estilos</h2><p class="center">Carrossel com 8 referências visuais de roupas infantis para explorar diferentes estilos e combinações.</p></div>
-<div class="ready-carousel"><div class="ready-track" id="readyTrack">
+<div class="ready-carousel" role="region" aria-label="Carrossel de roupas infantis para diferentes estilos"><div class="ready-track" id="readyTrack" tabindex="0" aria-label="8 estilos de roupas infantis">
 <figure class="ready-slide"><div class="ready-photo"><img width="900" height="1180" src="assets/referencia-costura-01.svg" alt="Vestido infantil de festa" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='assets/mockup-pequenos-looks.webp'"></div><figcaption>Vestido infantil de festa</figcaption><small>Referência visual infantil</small></figure><figure class="ready-slide"><div class="ready-photo"><img width="900" height="1180" src="assets/referencia-costura-02.svg" alt="Conjunto social infantil" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='assets/mockup-pequenos-looks.webp'"></div><figcaption>Conjunto social infantil</figcaption><small>Referência visual infantil</small></figure><figure class="ready-slide"><div class="ready-photo"><img width="900" height="1180" src="assets/referencia-costura-03.svg" alt="Conjunto casual infantil" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='assets/mockup-pequenos-looks.webp'"></div><figcaption>Conjunto casual infantil</figcaption><small>Referência visual infantil</small></figure><figure class="ready-slide"><div class="ready-photo"><img width="900" height="1180" src="assets/referencia-costura-04.svg" alt="Macaquinho infantil" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='assets/mockup-pequenos-looks.webp'"></div><figcaption>Macaquinho infantil</figcaption><small>Referência visual infantil</small></figure><figure class="ready-slide"><div class="ready-photo"><img width="900" height="1180" src="assets/referencia-costura-01.webp" alt="Referência visual de vestido infantil" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='assets/mockup-pequenos-looks.webp'"></div><figcaption>Referência visual de vestido infantil</figcaption><small>Referência visual infantil</small></figure><figure class="ready-slide"><div class="ready-photo"><img width="900" height="1180" src="assets/referencia-costura-02.webp" alt="Referência visual de conjunto infantil" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='assets/mockup-pequenos-looks.webp'"></div><figcaption>Referência visual de conjunto infantil</figcaption><small>Referência visual infantil</small></figure><figure class="ready-slide"><div class="ready-photo"><img width="900" height="1180" src="assets/referencia-costura-03.webp" alt="Referência visual de look infantil" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='assets/mockup-pequenos-looks.webp'"></div><figcaption>Referência visual de look infantil</figcaption><small>Referência visual infantil</small></figure><figure class="ready-slide"><div class="ready-photo"><img width="900" height="1180" src="assets/referencia-costura-04.webp" alt="Referência visual de macaquinho infantil" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='assets/mockup-pequenos-looks.webp'"></div><figcaption>Referência visual de macaquinho infantil</figcaption><small>Referência visual infantil</small></figure>
 </div>
-<div class="carousel-controls"><button type="button" id="readyPrev" aria-label="Anterior">‹</button><div class="carousel-count" id="readyCount">1 / 8</div><button type="button" id="readyNext" aria-label="Próximo">›</button></div>
+<div class="carousel-controls"><button type="button" id="readyPrev" aria-label="Anterior">‹</button><div class="carousel-count" id="readyCount" aria-live="polite">1 / 8</div><button type="button" id="readyNext" aria-label="Próximo">›</button></div>
 <div class="carousel-hint">Deslize para ver os 8 estilos</div></div></section>
 <section class="soft"><div class="wrap faq"><span class="kicker">Dúvidas frequentes</span><h2>Perguntas e respostas</h2><details><summary>O que recebo ao adquirir a cartilha?</summary><p>Uma cartilha digital de referências visuais de roupas infantis, de acordo com o plano escolhido, após a produção e habilitação da entrega.</p></details><details><summary>São moldes prontos para imprimir e cortar?</summary><p>Não. A cartilha reúne referências e inspirações visuais; não inclui moldes técnicos, medidas ou instruções de costura passo a passo.</p></details><details><summary>Preciso ter experiência com costura?</summary><p>Não para consultar as inspirações. Para produzir as peças, é necessário conhecimento de modelagem e costura.</p></details><details><summary>Posso acessar pelo celular?</summary><p>Sim, o formato digital foi pensado para consulta no celular ou computador.</p></details><details><summary>Como faço para comprar?</summary><p>Os botões de compra serão habilitados quando os links de pagamento, os arquivos finais e a entrega estiverem configurados.</p></details></div></section>
 </main><footer><strong>Pequenos Looks ♡</strong>Cartilha digital de referências infantis<br>Imagens e páginas exibidas são demonstrações ilustrativas.<br>© 2026 Pequenos Looks</footer>
 <div id="toast" class="toast" role="dialog" aria-modal="true" aria-live="polite" aria-labelledby="toastTitle"><b id="toastTitle">Checkout ainda não disponível</b><div style="margin-top:5px">Adicione o link do plano e finalize os materiais antes de habilitar as compras.</div><button type="button" id="closeToast">ENTENDI</button></div>
 <script>
 const CONFIG={essencial:{checkout:""},completa:{checkout:""}};
-document.querySelectorAll("[data-plan]").forEach(btn=>btn.addEventListener("click",()=>{const url=CONFIG[btn.dataset.plan].checkout;if(/^https:\/\//.test(url)){window.location.href=url}else document.getElementById("toast").classList.add("show")}));document.getElementById("closeToast").onclick=()=>document.getElementById("toast").classList.remove("show");
+const toast=document.getElementById("toast");
+const closeToast=document.getElementById("closeToast");
+document.querySelectorAll("[data-plan]").forEach(btn=>{
+  btn.addEventListener("click",()=>{
+    const plan=CONFIG[btn.dataset.plan];
+    const url=plan?.checkout?.trim()||"";
+    if(/^https:\/\//i.test(url)){ window.location.assign(url); return; }
+    if(toast){ toast.classList.add("show"); closeToast?.focus(); }
+  });
+});
+const hideToast=()=>toast?.classList.remove("show");
+closeToast?.addEventListener("click",hideToast);
+document.addEventListener("keydown",e=>{if(e.key==="Escape"&&toast?.classList.contains("show")){hideToast();}});
 </script>
 
 <script id="multi-carousel-v5">(()=>{
