@@ -21,6 +21,35 @@
 .preview-shell{padding:18px 20px 26px;background:#fff7f7}
 .preview-shell .wrap{max-width:540px;margin:auto}
 .sample-real{border:1px solid #efdce3}
+</style>
+<style id="inside-carousel-css">
+.inside-carousel{position:relative;margin-top:14px}
+.inside-track{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:8px max(20px,calc((100vw - 500px)/2)) 20px}
+.inside-track::-webkit-scrollbar{display:none}
+.inside-slide{flex:0 0 min(88vw,390px);scroll-snap-align:center}
+.inside-page{background:linear-gradient(180deg,#fffaf8,#f9e9ec);border:1px solid #e9ccd6;border-radius:20px;padding:16px;box-shadow:0 12px 30px rgba(115,66,84,.15);min-height:560px;position:relative;overflow:hidden}
+.inside-page:before,.inside-page:after{content:"";position:absolute;width:95px;height:95px;border-radius:50%;background:#f0c0cf;filter:blur(28px);opacity:.34}
+.inside-page:before{top:-28px;left:-24px}.inside-page:after{bottom:-32px;right:-18px}
+.inside-head{display:flex;justify-content:space-between;align-items:center;gap:10px;border-bottom:1px solid #e8cbd5;padding-bottom:10px;margin-bottom:12px}
+.inside-brand{font-family:Montserrat,sans-serif;font-weight:900;color:#9f4e6a;font-size:15px}
+.inside-ref{background:#bd738a;color:white;border-radius:30px;padding:6px 10px;font-size:9px;font-weight:800}
+.look-main{background:white;border:1px solid #efdce2;border-radius:16px;padding:16px 12px;text-align:center;position:relative;z-index:1}
+.look-main .garment{font-size:108px;line-height:1.1;filter:drop-shadow(0 9px 8px rgba(95,59,71,.14))}
+.look-main .look-type{font-size:9px;text-transform:uppercase;letter-spacing:1.4px;font-weight:800;color:#a75d76}
+.look-main h3{font-size:21px;margin:4px 0 4px;color:#6f4052}
+.look-main p{font-size:10px;margin:0 auto;max-width:270px}
+.look-detail-row{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:11px}
+.look-mini{background:rgba(255,255,255,.9);border:1px solid #efdce2;border-radius:12px;text-align:center;padding:10px 4px;position:relative;z-index:1}
+.look-mini .mini-garment{font-size:43px;line-height:1.2}
+.look-mini b{font-size:9px;display:block;margin-top:4px}
+.look-mini small{font-size:7px;color:#8a737c}
+.look-tags{display:flex;justify-content:center;gap:5px;flex-wrap:wrap;margin-top:12px;position:relative;z-index:1}
+.look-tags span{background:white;border:1px solid #e9cad5;border-radius:20px;padding:5px 8px;font-size:8px;font-weight:700;color:#8f5368}
+.carousel-controls{display:flex;align-items:center;justify-content:center;gap:12px;margin-top:4px}
+.carousel-controls button{border:1px solid #dfbdc9;background:white;color:#9c4a67;border-radius:50%;width:38px;height:38px;font-size:19px;font-weight:900;box-shadow:0 4px 12px rgba(120,75,90,.12)}
+.carousel-count{font-size:10px;font-weight:800;color:#84636e;min-width:44px;text-align:center}
+.carousel-hint{text-align:center;font-size:9px;color:#9a7b85;margin-top:7px}
+@media(min-width:560px){.inside-track{padding-left:calc((100vw - 500px)/2);padding-right:calc((100vw - 500px)/2)}}
 </style></head>
 <body>
 <main>
@@ -36,8 +65,85 @@
 <section class="soft"><div class="wrap"><span class="kicker">Tudo em um só lugar</span><h2>Inspiração organizada para tirar suas ideias do papel</h2><p class="center">Em vez de procurar referências espalhadas, tenha uma seleção visual dividida por estilos, detalhes e ocasiões para ajudar a imaginar a próxima peça.</p>
 <div class="checkgrid"><div class="check"><i>✓</i><div><b>Modelos para ocasiões diferentes</b><p>Ideias para vestidos, conjuntos, macaquinhos, festas e looks do dia a dia.</p></div></div><div class="check"><i>✓</i><div><b>Detalhes que fazem diferença</b><p>Ideias de golas, laços, mangas, shorts, acabamentos e combinações.</p></div></div><div class="check"><i>✓</i><div><b>Consulta rápida no celular</b><p>Salve a cartilha e volte às referências quando surgir um novo projeto.</p></div></div></div>
 </div></section>
-<section id="amostras" style="padding-bottom:12px"><div class="wrap"><span class="kicker">Veja o estilo do material</span><h2>Uma prévia das referências por dentro</h2><p class="center">Amostras ilustrativas com fotos de referência e desenhos conceituais; os detalhes descritos são exemplos de organização, não fichas técnicas. Deslize para conferir algumas amostras ilustrativas.</p></div></section>
-<div class="preview-shell"><div class="wrap"><img class="sample-real" src="assets/amostras-pequenos-looks.webp" alt="Amostras realistas da cartilha com vestidos, conjuntos, jardineiras e roupas infantis variadas" loading="lazy"><p class="caption">Prévia visual das referências: vestidos, conjuntos masculinos, jardineiras, macaquinhos e looks casuais e de festa.</p></div></div>
+
+<section id="amostras" style="padding-bottom:10px"><div class="wrap">
+<span class="kicker">Veja o produto por dentro</span>
+<h2>Folheie algumas referências da cartilha</h2>
+<p class="center">Cada slide simula uma página interna da cartilha, mostrando um look principal, detalhes e outras combinações relacionadas.</p>
+</div></section>
+<div class="inside-carousel">
+<div class="inside-track" id="insideTrack">
+
+<article class="inside-slide">
+<div class="inside-page">
+<div class="inside-head"><div class="inside-brand">Pequenos Looks</div><div class="inside-ref">Referência 01</div></div>
+<div class="look-main"><div class="look-type">Look principal</div><div class="garment">👗</div><h3>Vestido Rosé Festa</h3><p>Elegância e delicadeza para ocasiões especiais.</p></div>
+<div class="look-detail-row">
+<div class="look-mini"><div class="mini-garment">🎀</div><b>Laço</b><small>Inspiração complementar</small></div>
+<div class="look-mini"><div class="mini-garment">👛</div><b>Acessório</b><small>Combinação sugerida</small></div>
+<div class="look-mini"><div class="mini-garment">👠</div><b>Calçado</b><small>Detalhe do look</small></div>
+</div>
+<div class="look-tags"><span>Festa</span><span>Babados</span><span>Rosé</span></div>
+</div></article>
+<article class="inside-slide">
+<div class="inside-page">
+<div class="inside-head"><div class="inside-brand">Pequenos Looks</div><div class="inside-ref">Referência 02</div></div>
+<div class="look-main"><div class="look-type">Look principal</div><div class="garment">👔</div><h3>Look Social Menino</h3><p>Visual clássico e elegante para festas e eventos.</p></div>
+<div class="look-detail-row">
+<div class="look-mini"><div class="mini-garment">🎩</div><b>Detalhe</b><small>Inspiração complementar</small></div>
+<div class="look-mini"><div class="mini-garment">🩳</div><b>Bermuda</b><small>Combinação sugerida</small></div>
+<div class="look-mini"><div class="mini-garment">👞</div><b>Sapato</b><small>Detalhe do look</small></div>
+</div>
+<div class="look-tags"><span>Meninos</span><span>Social</span><span>Clássico</span></div>
+</div></article>
+<article class="inside-slide">
+<div class="inside-page">
+<div class="inside-head"><div class="inside-brand">Pequenos Looks</div><div class="inside-ref">Referência 03</div></div>
+<div class="look-main"><div class="look-type">Look principal</div><div class="garment">🩱</div><h3>Macaquinho Unissex</h3><p>Confortável, prático e versátil para o dia a dia.</p></div>
+<div class="look-detail-row">
+<div class="look-mini"><div class="mini-garment">👕</div><b>Camiseta</b><small>Inspiração complementar</small></div>
+<div class="look-mini"><div class="mini-garment">🧢</div><b>Acessório</b><small>Combinação sugerida</small></div>
+<div class="look-mini"><div class="mini-garment">👟</div><b>Tênis</b><small>Detalhe do look</small></div>
+</div>
+<div class="look-tags"><span>Unissex</span><span>Casual</span><span>Conforto</span></div>
+</div></article>
+<article class="inside-slide">
+<div class="inside-page">
+<div class="inside-head"><div class="inside-brand">Pequenos Looks</div><div class="inside-ref">Referência 04</div></div>
+<div class="look-main"><div class="look-type">Look principal</div><div class="garment">👕</div><h3>Conjunto Casual</h3><p>Combinação leve para brincar, passear e usar no cotidiano.</p></div>
+<div class="look-detail-row">
+<div class="look-mini"><div class="mini-garment">🩳</div><b>Short</b><small>Inspiração complementar</small></div>
+<div class="look-mini"><div class="mini-garment">🎒</div><b>Bolsa</b><small>Combinação sugerida</small></div>
+<div class="look-mini"><div class="mini-garment">👟</div><b>Tênis</b><small>Detalhe do look</small></div>
+</div>
+<div class="look-tags"><span>Casual</span><span>Conjunto</span><span>Dia a dia</span></div>
+</div></article>
+<article class="inside-slide">
+<div class="inside-page">
+<div class="inside-head"><div class="inside-brand">Pequenos Looks</div><div class="inside-ref">Referência 05</div></div>
+<div class="look-main"><div class="look-type">Look principal</div><div class="garment">👗</div><h3>Vestido Clássico</h3><p>Renda, laço e acabamento delicado para ocasiões especiais.</p></div>
+<div class="look-detail-row">
+<div class="look-mini"><div class="mini-garment">🎀</div><b>Laço</b><small>Inspiração complementar</small></div>
+<div class="look-mini"><div class="mini-garment">🧦</div><b>Detalhe</b><small>Combinação sugerida</small></div>
+<div class="look-mini"><div class="mini-garment">👡</div><b>Calçado</b><small>Detalhe do look</small></div>
+</div>
+<div class="look-tags"><span>Renda</span><span>Festa</span><span>Clássico</span></div>
+</div></article>
+<article class="inside-slide">
+<div class="inside-page">
+<div class="inside-head"><div class="inside-brand">Pequenos Looks</div><div class="inside-ref">Referência 06</div></div>
+<div class="look-main"><div class="look-type">Look principal</div><div class="garment">👚</div><h3>Look Floral</h3><p>Uma referência romântica com estampas e cores suaves.</p></div>
+<div class="look-detail-row">
+<div class="look-mini"><div class="mini-garment">🌸</div><b>Estampa</b><small>Inspiração complementar</small></div>
+<div class="look-mini"><div class="mini-garment">🎀</div><b>Laço</b><small>Combinação sugerida</small></div>
+<div class="look-mini"><div class="mini-garment">👜</div><b>Bolsa</b><small>Detalhe do look</small></div>
+</div>
+<div class="look-tags"><span>Floral</span><span>Delicado</span><span>Combinações</span></div>
+</div></article>
+</div>
+<div class="carousel-controls"><button type="button" id="insidePrev" aria-label="Anterior">‹</button><div class="carousel-count" id="insideCount">1 / 6</div><button type="button" id="insideNext" aria-label="Próximo">›</button></div>
+<div class="carousel-hint">Deslize para o lado ou use as setas</div>
+</div>
 <section><div class="wrap"><span class="kicker">Para quem é</span><h2>Feita para quem ama criar roupas infantis</h2><div class="cards"><div class="card"><div class="emoji">🧵</div><h3>Costureiras e artesãs</h3><p>Que desejam encontrar referências de estilos e detalhes com mais facilidade.</p></div><div class="card"><div class="emoji">🎀</div><h3>Quem está começando</h3><p>Que procura ideias para estudar combinações e desenvolver o próprio olhar criativo.</p></div><div class="card"><div class="emoji">👗</div><h3>Quem trabalha com moda infantil</h3><p>Que gosta de pesquisar inspirações antes de desenvolver novas peças.</p></div></div></div></section>
 <section class="soft"><div class="wrap"><span class="kicker">Exclusivos do premium</span><h2>Cinco bônus para enriquecer suas ideias</h2><p class="center">Materiais complementares previstos para a cartilha premium.</p>
 <div class="bonus"><div class="thumb">🎨</div><div><b>Bônus 1 — Cores e combinações</b><p>Paletas e inspirações para coordenar peças.</p></div></div>
@@ -80,4 +186,20 @@ let auto;function advance(){if(!rail.matches(":hover")&&!rail.matches(":active")
 const obs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting)document.getElementById("slidecounter").textContent=(samples.indexOf(samples[Number(e.target.dataset.i)])+1)+" / "+samples.length})},{root:rail,threshold:.6});[...rail.children].forEach((el,i)=>{el.dataset.i=i;obs.observe(el)});
 document.querySelectorAll("[data-plan]").forEach(btn=>btn.addEventListener("click",()=>{const url=CONFIG[btn.dataset.plan].checkout;if(/^https:\/\//.test(url)){window.location.href=url}else document.getElementById("toast").classList.add("show")}));document.getElementById("closeToast").onclick=()=>document.getElementById("toast").classList.remove("show");
 </script>
-</body></html>
+
+<script id="inside-carousel-js">
+(()=>{
+ const track=document.getElementById('insideTrack');
+ if(!track)return;
+ const slides=[...track.children], count=document.getElementById('insideCount');
+ const step=()=>slides[0].getBoundingClientRect().width+14;
+ const active=()=>Math.max(0,Math.min(slides.length-1,Math.round(track.scrollLeft/step())));
+ const sync=()=>count.textContent=(active()+1)+' / '+slides.length;
+ document.getElementById('insideNext').onclick=()=>{let i=active();track.scrollTo({left:(i>=slides.length-1?0:i+1)*step(),behavior:'smooth'})};
+ document.getElementById('insidePrev').onclick=()=>{let i=active();track.scrollTo({left:(i<=0?slides.length-1:i-1)*step(),behavior:'smooth'})};
+ let timer=setInterval(()=>document.getElementById('insideNext').click(),4200);
+ track.addEventListener('scroll',()=>requestAnimationFrame(sync),{passive:true});
+ track.addEventListener('pointerdown',()=>clearInterval(timer),{once:true});
+ sync();
+})();
+</script></body></html>
