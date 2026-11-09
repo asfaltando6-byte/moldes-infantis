@@ -50,138 +50,40 @@
 .carousel-count{font-size:10px;font-weight:800;color:#84636e;min-width:44px;text-align:center}
 .carousel-hint{text-align:center;font-size:9px;color:#9a7b85;margin-top:7px}
 @media(min-width:560px){.inside-track{padding-left:calc((100vw - 500px)/2);padding-right:calc((100vw - 500px)/2)}}
-</style><style id="tech-reference-css">
-.tech-sheet{background:#fffaf4;border:1px solid #e7c9c9;border-radius:20px;padding:14px;box-shadow:0 12px 28px rgba(113,71,82,.14);color:#603d49;min-height:590px}
-.tech-top{display:flex;justify-content:space-between;align-items:center;border-bottom:1px dashed #d79aa7;padding-bottom:9px;margin-bottom:10px}.tech-brand{font-weight:900;color:#994d67;font-size:13px}.tech-ref{font-size:9px;font-weight:900;background:#b85d77;color:#fff;padding:6px 10px;border-radius:20px}
-.tech-title{text-align:center;font-size:19px;font-weight:900;margin:7px 0 2px;color:#6a3c4e}.tech-sub{text-align:center;font-size:9px;color:#8e6c78;margin-bottom:10px}
-.tech-drawings{display:grid;grid-template-columns:1fr 1fr;gap:9px}.flat-card{background:#fff;border:1px solid #edd9dd;border-radius:13px;padding:9px;text-align:center}.flat-card b{font-size:9px;color:#8c5367;display:block;margin-bottom:4px}
-.flat-svg{width:100%;height:185px}.flat-svg *{vector-effect:non-scaling-stroke}.flat-stroke{fill:#f8e4e8;stroke:#6f4c58;stroke-width:2}.flat-line{fill:none;stroke:#6f4c58;stroke-width:1.6}.flat-dash{fill:none;stroke:#a97384;stroke-width:1.2;stroke-dasharray:5 4}
-.tech-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:9px;margin-top:9px}.tech-box{background:#fff;border:1px solid #edd9dd;border-radius:12px;padding:9px}.tech-box h4{font-size:9px;margin:0 0 7px;color:#a04f69;text-transform:uppercase;letter-spacing:.7px}.tech-box ul{margin:0;padding-left:14px}.tech-box li{font-size:8px;margin:4px 0;color:#745a63}
-.patterns{display:grid;grid-template-columns:repeat(3,1fr);gap:5px}.piece{height:54px;border:1.4px solid #845766;border-radius:9px 13px 8px 11px;position:relative;background:#fff8fa}.piece:after{content:"";position:absolute;inset:5px;border:1px dashed #c18b9b;border-radius:7px}.piece span{position:absolute;z-index:2;font-size:6px;font-weight:800;left:50%;<section id="amostras" style="padding-bottom:10px"><div class="wrap">
-<span class="kicker">Veja o produto por dentro</span>
-<h2>Referências pensadas para quem costura</h2>
-<p class="center">O material passa a seguir uma linguagem de <b>desenho técnico de moda</b>: frente e costas da peça, recortes, detalhes e partes do molde para servir de inspiração na hora de confeccionar.</p>
+</style><style id="tech-carousel-fix">
+.tech-carousel{padding:12px 0 28px;background:#fff7f7}
+.tech-track{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:8px 20px 18px}.tech-track::-webkit-scrollbar{display:none}
+.tech-slide{flex:0 0 min(88vw,390px);scroll-snap-align:center}
+.tech-page{background:#fffaf5;border:1px solid #e8cbd3;border-radius:18px;padding:14px;box-shadow:0 12px 28px rgba(115,72,86,.14)}
+.tech-head{display:flex;justify-content:space-between;align-items:center;border-bottom:1px dashed #d9a4b2;padding-bottom:8px;margin-bottom:10px}
+.tech-head b{font-size:12px;color:#934b63}.tech-head span{font-size:9px;background:#b95f79;color:#fff;padding:5px 9px;border-radius:20px;font-weight:800}
+.tech-title{text-align:center;font-size:18px;font-weight:900;color:#673e4d;margin:6px 0 10px}
+.tech-two{display:grid;grid-template-columns:1fr 1fr;gap:8px}.tech-card{background:#fff;border:1px solid #eddce1;border-radius:12px;padding:8px;text-align:center}.tech-card small{font-size:8px;font-weight:800;color:#97566d}
+.tech-svg{width:100%;height:180px}.tech-fill{fill:#f3d7df;stroke:#694953;stroke-width:2}.tech-line{fill:none;stroke:#694953;stroke-width:1.5}.tech-dash{fill:none;stroke:#a87384;stroke-width:1.1;stroke-dasharray:5 4}
+.tech-info{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px}.tech-box{background:#fff;border:1px solid #eddce1;border-radius:11px;padding:9px}.tech-box h4{font-size:9px;color:#a04f69;margin:0 0 6px;text-transform:uppercase}.tech-box ul{padding-left:14px;margin:0}.tech-box li{font-size:8px;margin:3px 0}
+.tech-pieces{display:grid;grid-template-columns:repeat(3,1fr);gap:5px}.tech-piece{height:48px;border:1px solid #8f6070;border-radius:8px;position:relative;background:#fff9fa;font-size:6px;font-weight:800;display:flex;align-items:center;justify-content:center;text-align:center}.tech-piece:after{content:"";position:absolute;inset:4px;border:1px dashed #c79aa8;border-radius:6px}
+.tech-controls{display:flex;justify-content:center;align-items:center;gap:12px;margin-top:8px}.tech-controls button{width:38px;height:38px;border-radius:50%;border:1px solid #dfbdc9;background:#fff;color:#9b4c67;font-size:19px;font-weight:900}.tech-count{font-size:10px;font-weight:800;color:#80626d}
+@media(min-width:560px){.tech-track{padding-left:calc((100vw - 500px)/2);padding-right:calc((100vw - 500px)/2)}}
+</style></head>
+<body>
+<main>
+<section class="hero" id="inicio"><div class="wrap">
+<span class="eyebrow">✦ Inspiração para moda infantil</span>
+<h1><em>120 referências de roupas infantis</em> para inspirar suas próximas criações</h1>
+<p class="sub">Uma <b>cartilha digital de referências visuais</b> para quem costura, cria ou busca ideias de roupas para meninos, meninas e looks unissex — tudo organizado para consultar quando quiser.</p>
+<div class="mini-badges"><span>♡ Modelos variados</span><span>✦ Consulta no celular</span><span>◌ Acesso digital</span></div>
+<div class="real-mockup"><img src="assets/mockup-pequenos-looks.webp" alt="Mockup realista da cartilha Pequenos Looks com livros, páginas e roupas infantis variadas" loading="eager"></div><p class="caption">Mockup ilustrativo; as páginas definitivas da cartilha serão produzidas separadamente.</p>
+<a class="cta" href="#planos">QUERO MINHA CARTILHA DE REFERÊNCIAS</a>
+<p class="undercta">✓ Material digital &nbsp; ✓ Duas opções de acesso &nbsp; ✓ Consulte quando precisar</p>
 </div></section>
-<div class="inside-carousel"><div class="inside-track" id="insideTrack">
-<article class="inside-slide"><div class="tech-sheet">
-<div class="tech-top"><div class="tech-brand">Pequenos Looks • Referências de Costura</div><div class="tech-ref">REF. 001</div></div>
-<div class="tech-title">Vestido Infantil de Festa</div><div class="tech-sub">Frente, costas, recortes e detalhes para modelagem</div>
-<div class="tech-drawings"><div class="flat-card"><b>FRENTE</b><svg viewBox="0 0 180 230" class="flat-svg" aria-hidden="true">
- <path class="flat-stroke" d="M67 32 Q90 22 113 32 L124 52 L142 66 L130 92 L119 82 L123 123 Q145 162 157 203 Q90 220 23 203 Q35 162 57 123 L61 82 L50 92 L38 66 L56 52 Z"/>
- <path class="flat-line" d="M67 32 Q90 50 113 32 M58 123 Q90 134 122 123 M90 124 L90 209"/>
- <path class="flat-line" d="M71 63 Q90 78 109 63"/><path class="flat-line" d="M74 113 Q90 98 106 113 Q90 125 74 113Z"/>
- <path class="flat-dash" d="M41 201 Q90 214 139 201"/>
- </svg></div><div class="flat-card"><b>COSTAS</b><svg viewBox="0 0 180 230" class="flat-svg" aria-hidden="true">
- <path class="flat-stroke" d="M67 32 Q90 22 113 32 L124 52 L142 66 L130 92 L119 82 L123 123 Q145 162 157 203 Q90 220 23 203 Q35 162 57 123 L61 82 L50 92 L38 66 L56 52 Z"/>
- <path class="flat-line" d="M67 32 Q90 50 113 32 M58 123 Q90 134 122 123 M90 124 L90 209"/>
- <path class="flat-dash" d="M90 35 L90 123"/><circle cx="90" cy="57" r="2.5" fill="#6f4c58"/><circle cx="90" cy="70" r="2.5" fill="#6f4c58"/>
- <path class="flat-dash" d="M41 201 Q90 214 139 201"/>
- </svg></div></div>
-<div class="detail-row"><div class="detail"><div class="dot">✂</div><b>Manga</b><small>Babado duplo</small></div><div class="detail"><div class="dot">✂</div><b>Cintura</b><small>Faixa + laço</small></div><div class="detail"><div class="dot">✂</div><b>Saia</b><small>Godê franzida</small></div></div>
-<div class="tech-grid"><div class="tech-box"><h4>Detalhes da referência</h4><ul><li>Manga curta com babado</li><li>Cintura marcada</li><li>Fechamento nas costas</li><li>Barra com acabamento embutido</li></ul></div>
-<div class="tech-box"><h4>Partes do molde</h4><div class="patterns"><div class="piece"><span>Frente</span></div><div class="piece"><span>Costas</span></div><div class="piece"><span>Manga</span></div><div class="piece"><span>Saia</span></div><div class="piece"><span>Faixa</span></div><div class="piece"><span>Laço</span></div></div></div></div>
-<div class="tech-note">Referência visual para inspiração de modelagem e costura. Medidas e moldes finais devem ser revisados antes da confecção.</div>
-</div></article><article class="inside-slide"><div class="tech-sheet">
-<div class="tech-top"><div class="tech-brand">Pequenos Looks • Referências de Costura</div><div class="tech-ref">REF. 012</div></div>
-<div class="tech-title">Conjunto Social Infantil</div><div class="tech-sub">Camisa + bermuda com leitura técnica da peça</div>
-<div class="tech-drawings"><div class="flat-card"><b>FRENTE</b><svg viewBox="0 0 180 230" class="flat-svg" aria-hidden="true">
- <path class="flat-stroke" d="M54 35 L74 24 Q90 34 106 24 L126 35 L142 62 L126 76 L116 63 L116 120 L64 120 L64 63 L54 76 L38 62 Z"/>
- <path class="flat-line" d="M74 24 Q90 48 106 24 M90 43 L90 117"/>
- <rect x="96" y="59" width="16" height="18" rx="2" class="flat-line"/>
- <path class="flat-stroke" d="M54 136 Q90 128 126 136 L121 203 L94 203 L90 164 L86 203 L59 203 Z"/>
- <path class="flat-line" d="M55 148 Q90 140 125 148 M90 143 L90 164"/>
- <path class="flat-dash" d="M60 196 L84 196 M96 196 L120 196"/>
- </svg></div><div class="flat-card"><b>COSTAS</b><svg viewBox="0 0 180 230" class="flat-svg" aria-hidden="true">
- <path class="flat-stroke" d="M54 35 L74 24 Q90 34 106 24 L126 35 L142 62 L126 76 L116 63 L116 120 L64 120 L64 63 L54 76 L38 62 Z"/>
- <path class="flat-line" d="M74 24 Q90 48 106 24 M90 43 L90 117"/>
- <path class="flat-line" d="M64 52 L116 52"/><rect x="69" y="142" width="19" height="18" rx="3" class="flat-line"/><rect x="92" y="142" width="19" height="18" rx="3" class="flat-line"/>
- <path class="flat-stroke" d="M54 136 Q90 128 126 136 L121 203 L94 203 L90 164 L86 203 L59 203 Z"/>
- <path class="flat-line" d="M55 148 Q90 140 125 148 M90 143 L90 164"/>
- <path class="flat-dash" d="M60 196 L84 196 M96 196 L120 196"/>
- </svg></div></div>
-<div class="detail-row"><div class="detail"><div class="dot">✂</div><b>Gola</b><small>Tradicional</small></div><div class="detail"><div class="dot">✂</div><b>Bolso</b><small>Frontal</small></div><div class="detail"><div class="dot">✂</div><b>Barra</b><small>Italiana</small></div></div>
-<div class="tech-grid"><div class="tech-box"><h4>Detalhes da referência</h4><ul><li>Camisa de manga curta</li><li>Bermuda estruturada</li><li>Bolso frontal funcional</li><li>Pode receber suspensório</li></ul></div>
-<div class="tech-box"><h4>Partes do molde</h4><div class="patterns"><div class="piece"><span>Frente camisa</span></div><div class="piece"><span>Costas</span></div><div class="piece"><span>Manga</span></div><div class="piece"><span>Gola</span></div><div class="piece"><span>Short frente</span></div><div class="piece"><span>Short costas</span></div></div></div></div>
-<div class="tech-note">Referência visual para inspiração de modelagem e costura. Medidas e moldes finais devem ser revisados antes da confecção.</div>
-</div></article><article class="inside-slide"><div class="tech-sheet">
-<div class="tech-top"><div class="tech-brand">Pequenos Looks • Referências de Costura</div><div class="tech-ref">REF. 023</div></div>
-<div class="tech-title">Conjunto Infantil Casual</div><div class="tech-sub">Referência de construção para camisa e short</div>
-<div class="tech-drawings"><div class="flat-card"><b>FRENTE</b><svg viewBox="0 0 180 230" class="flat-svg" aria-hidden="true">
- <path class="flat-stroke" d="M54 35 L74 24 Q90 34 106 24 L126 35 L142 62 L126 76 L116 63 L116 120 L64 120 L64 63 L54 76 L38 62 Z"/>
- <path class="flat-line" d="M74 24 Q90 48 106 24 M90 43 L90 117"/>
- <rect x="96" y="59" width="16" height="18" rx="2" class="flat-line"/>
- <path class="flat-stroke" d="M54 136 Q90 128 126 136 L121 203 L94 203 L90 164 L86 203 L59 203 Z"/>
- <path class="flat-line" d="M55 148 Q90 140 125 148 M90 143 L90 164"/>
- <path class="flat-dash" d="M60 196 L84 196 M96 196 L120 196"/>
- </svg></div><div class="flat-card"><b>COSTAS</b><svg viewBox="0 0 180 230" class="flat-svg" aria-hidden="true">
- <path class="flat-stroke" d="M54 35 L74 24 Q90 34 106 24 L126 35 L142 62 L126 76 L116 63 L116 120 L64 120 L64 63 L54 76 L38 62 Z"/>
- <path class="flat-line" d="M74 24 Q90 48 106 24 M90 43 L90 117"/>
- <path class="flat-line" d="M64 52 L116 52"/><rect x="69" y="142" width="19" height="18" rx="3" class="flat-line"/><rect x="92" y="142" width="19" height="18" rx="3" class="flat-line"/>
- <path class="flat-stroke" d="M54 136 Q90 128 126 136 L121 203 L94 203 L90 164 L86 203 L59 203 Z"/>
- <path class="flat-line" d="M55 148 Q90 140 125 148 M90 143 L90 164"/>
- <path class="flat-dash" d="M60 196 L84 196 M96 196 L120 196"/>
- </svg></div></div>
-<div class="detail-row"><div class="detail"><div class="dot">✂</div><b>Manga</b><small>Com vira</small></div><div class="detail"><div class="dot">✂</div><b>Cós</b><small>Elástico</small></div><div class="detail"><div class="dot">✂</div><b>Bolso</b><small>Lateral</small></div></div>
-<div class="tech-grid"><div class="tech-box"><h4>Detalhes da referência</h4><ul><li>Modelagem confortável</li><li>Botões frontais</li><li>Short com elástico</li><li>Ideal para tecidos leves</li></ul></div>
-<div class="tech-box"><h4>Partes do molde</h4><div class="patterns"><div class="piece"><span>Frente</span></div><div class="piece"><span>Costas</span></div><div class="piece"><span>Manga</span></div><div class="piece"><span>Gola</span></div><div class="piece"><span>Bolso</span></div><div class="piece"><span>Short</span></div></div></div></div>
-<div class="tech-note">Referência visual para inspiração de modelagem e costura. Medidas e moldes finais devem ser revisados antes da confecção.</div>
-</div></article><article class="inside-slide"><div class="tech-sheet">
-<div class="tech-top"><div class="tech-brand">Pequenos Looks • Referências de Costura</div><div class="tech-ref">REF. 037</div></div>
-<div class="tech-title">Macaquinho Infantil Unissex</div><div class="tech-sub">Desenho técnico e pontos de construção</div>
-<div class="tech-drawings"><div class="flat-card"><b>FRENTE</b><svg viewBox="0 0 180 230" class="flat-svg" aria-hidden="true">
- <path class="flat-stroke" d="M56 37 L75 26 Q90 38 105 26 L124 37 L137 58 L124 70 L114 62 L112 124 L125 199 L96 199 L90 163 L84 199 L55 199 L68 124 L66 62 L56 70 L43 58 Z"/>
- <path class="flat-line" d="M75 26 Q90 48 105 26 M68 124 Q90 134 112 124"/>
- <path class="flat-line" d="M90 43 L90 119"/><rect x="98" y="61" width="14" height="16" rx="2" class="flat-line"/><path class="flat-line" d="M72 108 Q82 98 87 112 M108 108 Q98 98 93 112"/>
- <path class="flat-dash" d="M57 192 L82 192 M98 192 L123 192"/>
- </svg></div><div class="flat-card"><b>COSTAS</b><svg viewBox="0 0 180 230" class="flat-svg" aria-hidden="true">
- <path class="flat-stroke" d="M56 37 L75 26 Q90 38 105 26 L124 37 L137 58 L124 70 L114 62 L112 124 L125 199 L96 199 L90 163 L84 199 L55 199 L68 124 L66 62 L56 70 L43 58 Z"/>
- <path class="flat-line" d="M75 26 Q90 48 105 26 M68 124 Q90 134 112 124"/>
- <path class="flat-line" d="M66 52 L114 52"/><path class="flat-dash" d="M90 35 L90 122"/>
- <path class="flat-dash" d="M57 192 L82 192 M98 192 L123 192"/>
- </svg></div></div>
-<div class="detail-row"><div class="detail"><div class="dot">✂</div><b>Gola</b><small>Social</small></div><div class="detail"><div class="dot">✂</div><b>Cintura</b><small>Elástico</small></div><div class="detail"><div class="dot">✂</div><b>Bolso</b><small>Funcional</small></div></div>
-<div class="tech-grid"><div class="tech-box"><h4>Detalhes da referência</h4><ul><li>Modelagem unissex</li><li>Mangas curtas</li><li>Abertura frontal</li><li>Bolsos laterais</li></ul></div>
-<div class="tech-box"><h4>Partes do molde</h4><div class="patterns"><div class="piece"><span>Frente</span></div><div class="piece"><span>Costas</span></div><div class="piece"><span>Manga</span></div><div class="piece"><span>Gola</span></div><div class="piece"><span>Bolso</span></div><div class="piece"><span>Short</span></div></div></div></div>
-<div class="tech-note">Referência visual para inspiração de modelagem e costura. Medidas e moldes finais devem ser revisados antes da confecção.</div>
-</div></article>
-</div>
-<div class="carousel-controls"><button type="button" id="insidePrev" aria-label="Anterior">‹</button><div class="carousel-count" id="insideCount">1 / 4</div><button type="button" id="insideNext" aria-label="Próximo">›</button></div>
-<div class="carousel-hint">Deslize para o lado para ver outras referências</div></div>
-ara brincar, passear e usar no cotidiano.</p></div>
-<div class="look-detail-row">
-<div class="look-mini"><div class="mini-garment">🩳</div><b>Short</b><small>Inspiração complementar</small></div>
-<div class="look-mini"><div class="mini-garment">🎒</div><b>Bolsa</b><small>Combinação sugerida</small></div>
-<div class="look-mini"><div class="mini-garment">👟</div><b>Tênis</b><small>Detalhe do look</small></div>
-</div>
-<div class="look-tags"><span>Casual</span><span>Conjunto</span><span>Dia a dia</span></div>
-</div></article>
-<article class="inside-slide">
-<div class="inside-page">
-<div class="inside-head"><div class="inside-brand">Pequenos Looks</div><div class="inside-ref">Referência 05</div></div>
-<div class="look-main"><div class="look-type">Look principal</div><div class="garment">👗</div><h3>Vestido Clássico</h3><p>Renda, laço e acabamento delicado para ocasiões especiais.</p></div>
-<div class="look-detail-row">
-<div class="look-mini"><div class="mini-garment">🎀</div><b>Laço</b><small>Inspiração complementar</small></div>
-<div class="look-mini"><div class="mini-garment">🧦</div><b>Detalhe</b><small>Combinação sugerida</small></div>
-<div class="look-mini"><div class="mini-garment">👡</div><b>Calçado</b><small>Detalhe do look</small></div>
-</div>
-<div class="look-tags"><span>Renda</span><span>Festa</span><span>Clássico</span></div>
-</div></article>
-<article class="inside-slide">
-<div class="inside-page">
-<div class="inside-head"><div class="inside-brand">Pequenos Looks</div><div class="inside-ref">Referência 06</div></div>
-<div class="look-main"><div class="look-type">Look principal</div><div class="garment">👚</div><h3>Look Floral</h3><p>Uma referência romântica com estampas e cores suaves.</p></div>
-<div class="look-detail-row">
-<div class="look-mini"><div class="mini-garment">🌸</div><b>Estampa</b><small>Inspiração complementar</small></div>
-<div class="look-mini"><div class="mini-garment">🎀</div><b>Laço</b><small>Combinação sugerida</small></div>
-<div class="look-mini"><div class="mini-garment">👜</div><b>Bolsa</b><small>Detalhe do look</small></div>
-</div>
-<div class="look-tags"><span>Floral</span><span>Delicado</span><span>Combinações</span></div>
-</div></article>
-</div>
-<div class="carousel-controls"><button type="button" id="insidePrev" aria-label="Anterior">‹</button><div class="carousel-count" id="insideCount">1 / 6</div><button type="button" id="insideNext" aria-label="Próximo">›</button></div>
-<div class="carousel-hint">Deslize para o lado ou use as setas</div>
-</div>
-<section><div class="wrap"><span class="kicker">Para quem é</span><h2>Feita para quem ama criar roupas infantis</h2><div class="cards"><div class="card"><div class="emoji">🧵</div><h3>Costureiras e artesãs</h3><p>Que desejam encontrar referências de estilos e detalhes com mais facilidade.</p></div><div class="card"><div class="emoji">🎀</div><h3>Quem está começando</h3><p>Que procura ideias para estudar combinações e desenvolver o próprio olhar criativo.</p></div><div class="card"><div class="emoji">👗</div><h3>Quem trabalha com moda infantil</h3><p>Que gosta de pesquisar inspirações antes de desenvolver novas peças.</p></div></div></div></section>
+<section class="soft"><div class="wrap"><span class="kicker">Tudo em um só lugar</span><h2>Inspiração organizada para tirar suas ideias do papel</h2><p class="center">Em vez de procurar referências espalhadas, tenha uma seleção visual dividida por estilos, detalhes e ocasiões para ajudar a imaginar a próxima peça.</p>
+<div class="checkgrid"><div class="check"><i>✓</i><div><b>Modelos para ocasiões diferentes</b><p>Ideias para vestidos, conjuntos, macaquinhos, festas e looks do dia a dia.</p></div></div><div class="check"><i>✓</i><div><b>Detalhes que fazem diferença</b><p>Ideias de golas, laços, mangas, shorts, acabamentos e combinações.</p></div></div><div class="check"><i>✓</i><div><b>Consulta rápida no celular</b><p>Salve a cartilha e volte às referências quando surgir um novo projeto.</p></div></div></div>
+</div></section>
+
+<section id="amostras" style="padding-bottom:10px"><div class="wrap"><span class="kicker">Veja o produto por dentro</span><h2>Referências no estilo que costureiras usam</h2><p class="center">Cada página mostra a roupa como <b>desenho técnico de moda</b>, com frente e costas, detalhes da construção e partes do molde para servir de inspiração.</p></div></section>
+<div class="tech-carousel"><div class="tech-track" id="techTrack">
+<article class="tech-slide"><div class="tech-page"><div class="tech-head"><b>Pequenos Looks • Referência de Costura</b><span>REF. 001</span></div><div class="tech-title">Vestido Infantil de Festa</div><div class="tech-two"><div class="tech-card"><small>FRENTE</small><svg viewBox="0 0 180 230" class="tech-svg"><path class="tech-fill" d="M68 28 Q90 20 112 28 L122 47 L142 62 L130 86 L118 78 L120 119 Q145 160 155 201 Q90 216 25 201 Q35 160 60 119 L62 78 L50 86 L38 62 L58 47 Z"/><path class="tech-line" d="M68 28 Q90 48 112 28 M59 119 Q90 130 121 119"/><path class="tech-line" d="M73 105 Q90 91 107 105 Q90 118 73 105Z"/><path class="tech-dash" d="M44 198 Q90 210 136 198"/></svg></div><div class="tech-card"><small>COSTAS</small><svg viewBox="0 0 180 230" class="tech-svg"><path class="tech-fill" d="M68 28 Q90 20 112 28 L122 47 L142 62 L130 86 L118 78 L120 119 Q145 160 155 201 Q90 216 25 201 Q35 160 60 119 L62 78 L50 86 L38 62 L58 47 Z"/><path class="tech-line" d="M68 28 Q90 48 112 28 M59 119 Q90 130 121 119"/><path class="tech-dash" d="M90 35 L90 118"/><circle cx="90" cy="55" r="2.5" fill="#694953"/><circle cx="90" cy="68" r="2.5" fill="#694953"/><path class="tech-dash" d="M44 198 Q90 210 136 198"/></svg></div></div><div class="tech-info"><div class="tech-box"><h4>Detalhes do modelo</h4><ul><li>Manga com babado</li><li>Cintura marcada</li><li>Laço frontal</li><li>Saia rodada</li></ul></div><div class="tech-box"><h4>Peças de referência</h4><div class="tech-pieces"><div class="tech-piece">Frente</div><div class="tech-piece">Costas</div><div class="tech-piece">Manga</div><div class="tech-piece">Saia</div><div class="tech-piece">Faixa</div><div class="tech-piece">Laço</div></div></div></div></div></article><article class="tech-slide"><div class="tech-page"><div class="tech-head"><b>Pequenos Looks • Referência de Costura</b><span>REF. 012</span></div><div class="tech-title">Conjunto Social Infantil</div><div class="tech-two"><div class="tech-card"><small>FRENTE</small><svg viewBox="0 0 180 230" class="tech-svg"><path class="tech-fill" d="M54 34 L74 24 Q90 34 106 24 L126 34 L142 60 L126 74 L116 62 L116 117 L64 117 L64 62 L54 74 L38 60 Z"/><path class="tech-line" d="M74 24 Q90 47 106 24 M90 42 L90 114"/><path class="tech-fill" d="M54 135 Q90 128 126 135 L121 201 L95 201 L90 165 L85 201 L59 201 Z"/><rect x="98" y="58" width="14" height="17" rx="2" class="tech-line"/></svg></div><div class="tech-card"><small>COSTAS</small><svg viewBox="0 0 180 230" class="tech-svg"><path class="tech-fill" d="M54 34 L74 24 Q90 34 106 24 L126 34 L142 60 L126 74 L116 62 L116 117 L64 117 L64 62 L54 74 L38 60 Z"/><path class="tech-line" d="M74 24 Q90 47 106 24 M90 42 L90 114"/><path class="tech-fill" d="M54 135 Q90 128 126 135 L121 201 L95 201 L90 165 L85 201 L59 201 Z"/><path class="tech-line" d="M64 52 L116 52"/><rect x="69" y="145" width="18" height="16" rx="2" class="tech-line"/><rect x="93" y="145" width="18" height="16" rx="2" class="tech-line"/></svg></div></div><div class="tech-info"><div class="tech-box"><h4>Detalhes do modelo</h4><ul><li>Camisa com gola</li><li>Bolso frontal</li><li>Bermuda social</li><li>Suspensório opcional</li></ul></div><div class="tech-box"><h4>Peças de referência</h4><div class="tech-pieces"><div class="tech-piece">Frente camisa</div><div class="tech-piece">Costas</div><div class="tech-piece">Manga</div><div class="tech-piece">Gola</div><div class="tech-piece">Short frente</div><div class="tech-piece">Short costas</div></div></div></div></div></article><article class="tech-slide"><div class="tech-page"><div class="tech-head"><b>Pequenos Looks • Referência de Costura</b><span>REF. 023</span></div><div class="tech-title">Conjunto Infantil Casual</div><div class="tech-two"><div class="tech-card"><small>FRENTE</small><svg viewBox="0 0 180 230" class="tech-svg"><path class="tech-fill" d="M54 34 L74 24 Q90 34 106 24 L126 34 L142 60 L126 74 L116 62 L116 117 L64 117 L64 62 L54 74 L38 60 Z"/><path class="tech-line" d="M74 24 Q90 47 106 24 M90 42 L90 114"/><path class="tech-fill" d="M54 135 Q90 128 126 135 L121 201 L95 201 L90 165 L85 201 L59 201 Z"/><rect x="98" y="58" width="14" height="17" rx="2" class="tech-line"/></svg></div><div class="tech-card"><small>COSTAS</small><svg viewBox="0 0 180 230" class="tech-svg"><path class="tech-fill" d="M54 34 L74 24 Q90 34 106 24 L126 34 L142 60 L126 74 L116 62 L116 117 L64 117 L64 62 L54 74 L38 60 Z"/><path class="tech-line" d="M74 24 Q90 47 106 24 M90 42 L90 114"/><path class="tech-fill" d="M54 135 Q90 128 126 135 L121 201 L95 201 L90 165 L85 201 L59 201 Z"/><path class="tech-line" d="M64 52 L116 52"/><rect x="69" y="145" width="18" height="16" rx="2" class="tech-line"/><rect x="93" y="145" width="18" height="16" rx="2" class="tech-line"/></svg></div></div><div class="tech-info"><div class="tech-box"><h4>Detalhes do modelo</h4><ul><li>Manga com vira</li><li>Cós com elástico</li><li>Bolso funcional</li><li>Barra dobrada</li></ul></div><div class="tech-box"><h4>Peças de referência</h4><div class="tech-pieces"><div class="tech-piece">Frente</div><div class="tech-piece">Costas</div><div class="tech-piece">Manga</div><div class="tech-piece">Gola</div><div class="tech-piece">Bolso</div><div class="tech-piece">Short</div></div></div></div></div></article><article class="tech-slide"><div class="tech-page"><div class="tech-head"><b>Pequenos Looks • Referência de Costura</b><span>REF. 037</span></div><div class="tech-title">Macaquinho Infantil Unissex</div><div class="tech-two"><div class="tech-card"><small>FRENTE</small><svg viewBox="0 0 180 230" class="tech-svg"><path class="tech-fill" d="M56 36 L76 25 Q90 37 104 25 L124 36 L138 58 L124 70 L114 62 L112 124 L124 199 L97 199 L90 164 L83 199 L56 199 L68 124 L66 62 L56 70 L42 58 Z"/><path class="tech-line" d="M76 25 Q90 46 104 25 M68 124 Q90 133 112 124"/><path class="tech-line" d="M90 42 L90 118"/><rect x="98" y="61" width="14" height="16" rx="2" class="tech-line"/></svg></div><div class="tech-card"><small>COSTAS</small><svg viewBox="0 0 180 230" class="tech-svg"><path class="tech-fill" d="M56 36 L76 25 Q90 37 104 25 L124 36 L138 58 L124 70 L114 62 L112 124 L124 199 L97 199 L90 164 L83 199 L56 199 L68 124 L66 62 L56 70 L42 58 Z"/><path class="tech-line" d="M76 25 Q90 46 104 25 M68 124 Q90 133 112 124"/><path class="tech-dash" d="M90 35 L90 122"/></svg></div></div><div class="tech-info"><div class="tech-box"><h4>Detalhes do modelo</h4><ul><li>Gola social</li><li>Abertura frontal</li><li>Cintura com elástico</li><li>Bolsos laterais</li></ul></div><div class="tech-box"><h4>Peças de referência</h4><div class="tech-pieces"><div class="tech-piece">Frente</div><div class="tech-piece">Costas</div><div class="tech-piece">Manga</div><div class="tech-piece">Gola</div><div class="tech-piece">Bolso</div><div class="tech-piece">Short</div></div></div></div></div></article>
+</div><div class="tech-controls"><button type="button" id="techPrev">‹</button><div class="tech-count" id="techCount">1 / 4</div><button type="button" id="techNext">›</button></div></div><section><div class="wrap"><span class="kicker">Para quem é</span><h2>Feita para quem ama criar roupas infantis</h2><div class="cards"><div class="card"><div class="emoji">🧵</div><h3>Costureiras e artesãs</h3><p>Que desejam encontrar referências de estilos e detalhes com mais facilidade.</p></div><div class="card"><div class="emoji">🎀</div><h3>Quem está começando</h3><p>Que procura ideias para estudar combinações e desenvolver o próprio olhar criativo.</p></div><div class="card"><div class="emoji">👗</div><h3>Quem trabalha com moda infantil</h3><p>Que gosta de pesquisar inspirações antes de desenvolver novas peças.</p></div></div></div></section>
 <section class="soft"><div class="wrap"><span class="kicker">Exclusivos do premium</span><h2>Cinco bônus para enriquecer suas ideias</h2><p class="center">Materiais complementares previstos para a cartilha premium.</p>
 <div class="bonus"><div class="thumb">🎨</div><div><b>Bônus 1 — Cores e combinações</b><p>Paletas e inspirações para coordenar peças.</p></div></div>
 <div class="bonus"><div class="thumb">📋</div><div><b>Bônus 2 — Ficha de inspiração</b><p>Organize os detalhes de cada projeto.</p></div></div>
@@ -218,9 +120,6 @@ const samples=[
 {title:"Look infantil",detail:"Ideias de conjuntos combinados",color:"#b6d1e3",accent:"#718da7",kind:7,emoji:"👚",tags:["Conjuntos","Cores"]}
 ];
 function dressSvg(s){const c=s.color,a=s.accent,k=s.kind;let sleeve=k%3===0?'<ellipse cx="79" cy="113" rx="29" ry="25" fill="'+c+'" stroke="'+a+'" stroke-width="2"/><ellipse cx="201" cy="113" rx="29" ry="25" fill="'+c+'" stroke="'+a+'" stroke-width="2"/>':k%3===1?'<path d="M91 78 L75 136 L88 142 L111 98 M189 78 L205 136 L192 142 L170 98" fill="'+c+'" stroke="'+a+'" stroke-width="3"/>':'<path d="M91 89 Q65 90 61 129 Q76 145 94 133 L105 99 M189 89 Q215 90 219 129 Q204 145 186 133 L175 99" fill="'+c+'" stroke="'+a+'" stroke-width="3"/>';let layered=k%2===0?'<path d="M48 291 Q140 317 232 291 L238 314 Q140 345 42 314Z" fill="#fff" opacity=".5"/>':'';let lace=k%3===2?'<path d="M77 139 Q140 158 203 139" stroke="#fff" stroke-width="8" fill="none" stroke-dasharray="2 7"/>':'';let bow=k%2===1?'<path d="M140 163 Q111 141 111 163 Q111 179 140 169 Q169 179 169 163 Q169 141 140 163Z" fill="'+a+'"/><circle cx="140" cy="165" r="6" fill="#fff4f6"/>':'';return '<svg viewBox="0 0 280 370" role="img" aria-label="Ilustração de vestido infantil '+s.title+'"><ellipse cx="140" cy="350" rx="75" ry="10" fill="#e9dce0"/><path d="M123 47 Q140 36 157 47 L155 77 L125 77Z" fill="#f2d8c5"/>'+sleeve+'<path d="M113 72 Q140 89 167 72 L189 95 L182 161 L98 161 L91 95Z" fill="'+c+'" stroke="'+a+'" stroke-width="3"/><path d="M98 154 L182 154 Q206 214 244 315 Q140 352 36 315 Q74 214 98 154Z" fill="'+c+'" stroke="'+a+'" stroke-width="3"/><path d="M99 158 Q140 169 181 158" fill="none" stroke="'+a+'" stroke-width="5"/><path d="M123 78 Q140 97 157 78" fill="none" stroke="#fff8f0" stroke-width="6"/><path d="M100 190 Q77 256 57 304 M140 183 L140 329 M180 190 Q203 256 223 304" stroke="#fff" stroke-width="4" fill="none" opacity=".48"/>'+layered+lace+bow+'<path d="M123 49 Q140 44 157 49" stroke="#fff8ed" stroke-width="3" fill="none"/></svg>'}
-const rail=document.getElementById("slides");samples.forEach((s,i)=>{let el=document.createElement("article");el.className="slide";el.innerHTML='<div class="sheet"><div class="sheet-top"><span>Pequenos Looks</span><span>REF. '+String(i+1).padStart(3,"0")+'</span></div><div class="dress-art">'+'<div class="sample-icon">'+s.emoji+'</div><div class="sample-kind">'+s.tags[0]+'</div>'+'</div><div class="sheet-title">'+s.title+'</div><p class="sheet-desc">'+s.detail+'</p><div class="sheet-tags">'+s.tags.map(t=>'<span>'+t+'</span>').join("")+'</div></div>';rail.appendChild(el)});
-let auto;function advance(){if(!rail.matches(":hover")&&!rail.matches(":active")){let w=rail.firstElementChild.getBoundingClientRect().width+12;if(rail.scrollLeft>=rail.scrollWidth-rail.clientWidth-w*.4)rail.scrollTo({left:0,behavior:"smooth"});else rail.scrollBy({left:w,behavior:"smooth"})}}if(!window.matchMedia("(prefers-reduced-motion: reduce)").matches)auto=setInterval(advance,4000);
-const obs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting)document.getElementById("slidecounter").textContent=(samples.indexOf(samples[Number(e.target.dataset.i)])+1)+" / "+samples.length})},{root:rail,threshold:.6});[...rail.children].forEach((el,i)=>{el.dataset.i=i;obs.observe(el)});
 document.querySelectorAll("[data-plan]").forEach(btn=>btn.addEventListener("click",()=>{const url=CONFIG[btn.dataset.plan].checkout;if(/^https:\/\//.test(url)){window.location.href=url}else document.getElementById("toast").classList.add("show")}));document.getElementById("closeToast").onclick=()=>document.getElementById("toast").classList.remove("show");
 </script>
 
@@ -239,4 +138,4 @@ document.querySelectorAll("[data-plan]").forEach(btn=>btn.addEventListener("clic
  track.addEventListener('pointerdown',()=>clearInterval(timer),{once:true});
  sync();
 })();
-</script></body></html>
+</script><script id="tech-carousel-js">(()=>{const t=document.getElementById('techTrack');if(!t)return;const slides=[...t.children],c=document.getElementById('techCount');const step=()=>slides[0].getBoundingClientRect().width+14;const idx=()=>Math.max(0,Math.min(slides.length-1,Math.round(t.scrollLeft/step())));const sync=()=>c.textContent=(idx()+1)+' / '+slides.length;document.getElementById('techNext').onclick=()=>{const i=idx();t.scrollTo({left:(i>=slides.length-1?0:i+1)*step(),behavior:'smooth'})};document.getElementById('techPrev').onclick=()=>{const i=idx();t.scrollTo({left:(i<=0?slides.length-1:i-1)*step(),behavior:'smooth'})};t.addEventListener('scroll',()=>requestAnimationFrame(sync),{passive:true});setInterval(()=>document.getElementById('techNext').click(),4500);sync()})();</script></body></html>
