@@ -141,6 +141,23 @@ footer strong{font-size:16px!important}
 .bonus-photo-card b{display:block;font-size:13px;color:#36242c;margin-bottom:4px}
 .bonus-photo-card p{font-size:11.5px!important;line-height:1.45!important;margin:0!important;color:#614a53!important}
 @media(max-width:390px){.ref-photo-wrap{height:325px}.bonus-photo-card{grid-template-columns:96px 1fr}.bonus-photo-card img{width:96px;height:88px}}
+</style><style id="carousels-v5">
+.sewing-carousel,.ready-carousel{padding:8px 0 26px}
+.sewing-track,.ready-track{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:8px max(20px,calc((100vw - 500px)/2)) 18px}
+.sewing-track::-webkit-scrollbar,.ready-track::-webkit-scrollbar{display:none}
+.sewing-slide{flex:0 0 min(89vw,410px);scroll-snap-align:center;background:#fff;border:1px solid #ead5dc;border-radius:20px;overflow:hidden;box-shadow:0 14px 32px rgba(98,55,71,.13)}
+.sewing-photo{height:360px;background:#f7edf0;overflow:hidden}.sewing-photo img{width:100%;height:100%;object-fit:cover;display:block}
+.sewing-body{padding:16px}.sewing-ref{display:inline-block;font-size:9px;font-weight:900;color:#9f4563;background:#f7e3e9;padding:6px 9px;border-radius:999px}
+.sewing-body h3{font-size:20px!important;margin:9px 0!important}.sewing-body p{font-size:12.5px!important;margin:10px 0 0!important}
+.sewing-tags{display:flex;gap:6px;flex-wrap:wrap}.sewing-tags span{font-size:9px;font-weight:700;border:1px solid #e4c6d0;border-radius:999px;padding:6px 8px;background:#fff8fa;color:#684b56}
+.bonus-grid-v4{display:grid;gap:12px;margin-top:18px}.bonus-card-v4{display:grid;grid-template-columns:96px 1fr;gap:13px;align-items:center;background:#fff;border:1px solid #ead5dc;border-radius:16px;padding:10px;box-shadow:0 7px 18px rgba(91,50,66,.07)}
+.bonus-art-v4{width:96px;height:78px;background:#fff7f8;border-radius:12px;display:flex;align-items:center;justify-content:center}.bonus-art-v4 svg{width:88px;height:68px}
+.bonus-card-v4 b{font-size:13.5px;color:#35232b}.bonus-card-v4 p{font-size:11.8px!important;line-height:1.45!important;margin:4px 0 0!important}
+.ready-slide{flex:0 0 min(78vw,340px);scroll-snap-align:center;margin:0;background:#fff;border:1px solid #ead5dc;border-radius:17px;overflow:hidden;box-shadow:0 12px 26px rgba(98,55,71,.11)}
+.ready-photo{height:290px;background:#f7edf0;overflow:hidden}.ready-photo img{width:100%;height:100%;object-fit:cover;display:block}
+.ready-slide figcaption{font-size:14px;font-weight:900;color:#35232b;text-align:center;padding:10px 8px 2px}.ready-slide small{display:block;text-align:center;font-size:10px;color:#735b64;padding:0 8px 11px}
+.carousel-controls{display:flex;align-items:center;justify-content:center;gap:12px;margin-top:4px}.carousel-controls button{border:1px solid #dfbdc9;background:#fff;color:#9c4a67;border-radius:50%;width:39px;height:39px;font-size:19px;font-weight:900}.carousel-count{font-size:10.5px;font-weight:900;color:#775963;min-width:48px;text-align:center}
+@media(max-width:390px){.sewing-photo{height:325px}.ready-photo{height:260px}.bonus-card-v4{grid-template-columns:84px 1fr}.bonus-art-v4{width:84px;height:72px}.bonus-art-v4 svg{width:76px;height:62px}}
 </style></head>
 <body>
 <main>
@@ -157,68 +174,104 @@ footer strong{font-size:16px!important}
 <div class="checkgrid"><div class="check"><i>✓</i><div><b>Modelos para ocasiões diferentes</b><p>Ideias para vestidos, conjuntos, macaquinhos, festas e looks do dia a dia.</p></div></div><div class="check"><i>✓</i><div><b>Detalhes que fazem diferença</b><p>Ideias de golas, laços, mangas, shorts, acabamentos e combinações.</p></div></div><div class="check"><i>✓</i><div><b>Consulta rápida no celular</b><p>Salve a cartilha e volte às referências quando surgir um novo projeto.</p></div></div></div>
 </div></section>
 
-<section id="amostras" style="padding-bottom:10px"><div class="wrap">
-<span class="kicker">Veja o produto por dentro</span>
-<h2>Modelos realistas e fáceis de entender</h2>
-<p class="center">Cada referência mostra a roupa pronta em destaque e, logo abaixo, os principais detalhes que podem servir de inspiração na hora de costurar.</p>
+<section id="amostras" style="padding-bottom:8px"><div class="wrap">
+<span class="kicker">Veja por dentro</span>
+<h2>10 referências pensadas para costureiras</h2>
+<p class="center">Modelos variados para observar forma, caimento, mangas, saias, bolsos, laços, combinações e acabamentos antes de criar sua própria peça.</p>
 </div></section>
-<div class="tech-carousel">
-  <div class="tech-track" id="techTrack">
-    <article class="tech-slide ref-photo-card">
-      <div class="ref-photo-wrap"><img src="https://jujujam.in/cdn/shop/files/Floral_Fantasy_Girls_Dress_With_Sling_Bag_2.jpg?v=1753950246&width=1200" alt="Vestido Floral com Babados" loading="eager" decoding="async"></div>
-      <div class="ref-card-body">
-        <span class="ref-number">REFERÊNCIA 01</span>
-        <h3>Vestido Floral com Babados</h3>
-        <div class="ref-tags"><span>Manga com babado</span><span>Saia franzida</span><span>Estampa floral</span><span>Acabamento delicado</span></div>
-        <p>Referência fácil de visualizar para vestidos leves e românticos.</p>
-      </div>
-    </article><article class="tech-slide ref-photo-card">
-      <div class="ref-photo-wrap"><img src="https://www.mamasandpapas.com/cdn/shop/files/mamas-papas-outfits-sets-rust-shirt-shorts-outfit-set-1225892980_2000x.jpg?v=1773324729" alt="Conjunto Social Menino" loading="lazy" decoding="async"></div>
-      <div class="ref-card-body">
-        <span class="ref-number">REFERÊNCIA 02</span>
-        <h3>Conjunto Social Menino</h3>
-        <div class="ref-tags"><span>Camisa estruturada</span><span>Bermuda reta</span><span>Gola clássica</span><span>Visual social</span></div>
-        <p>Boa referência para conjuntos masculinos mais arrumados.</p>
-      </div>
-    </article><article class="tech-slide ref-photo-card">
-      <div class="ref-photo-wrap"><img src="https://includ.com/cdn/shop/files/30019d81-03e0-49c0-8a63-47586d273fe9O1CN01Nn4MdI1IIxiU9Yg70__21_212456580871-0-cib_d418ad6e-3c5f-481b-b137-d93557d79594.jpg?v=1743065444&width=1200" alt="Conjunto Blusa + Shorts" loading="lazy" decoding="async"></div>
-      <div class="ref-card-body">
-        <span class="ref-number">REFERÊNCIA 03</span>
-        <h3>Conjunto Blusa + Shorts</h3>
-        <div class="ref-tags"><span>Blusa com franzido</span><span>Short com laço</span><span>Detalhes bordados</span><span>Conjunto casual</span></div>
-        <p>Mostra com clareza a combinação entre parte de cima e parte de baixo.</p>
-      </div>
-    </article><article class="tech-slide ref-photo-card">
-      <div class="ref-photo-wrap"><img src="https://foreveryoungboutiquela.com/cdn/shop/products/BTKA_16915093003574321_7af6def5aac8867cf8d61f3e9b9be6_1024x1024.jpg?v=1691978704" alt="Macaquinho Infantil" loading="lazy" decoding="async"></div>
-      <div class="ref-card-body">
-        <span class="ref-number">REFERÊNCIA 04</span>
-        <h3>Macaquinho Infantil</h3>
-        <div class="ref-tags"><span>Alças com botão</span><span>Bolso frontal</span><span>Modelagem soltinha</span><span>Peça única</span></div>
-        <p>Referência visual simples para macaquinhos e jardineiras infantis.</p>
-      </div>
-    </article>
-  </div>
-  <div class="tech-controls"><button type="button" id="techPrev" aria-label="Anterior">‹</button><div class="tech-count" id="techCount">1 / 4</div><button type="button" id="techNext" aria-label="Próximo">›</button></div>
-  <div class="carousel-hint">Deslize para o lado para ver outros modelos</div>
+<div class="sewing-carousel">
+<div class="sewing-track" id="sewingTrack">
+<article class="sewing-slide">
+<div class="sewing-photo"><img src="https://jujujam.in/cdn/shop/files/Floral_Fantasy_Girls_Dress_With_Sling_Bag_2.jpg?v=1753950246&width=1200" alt="Vestido floral com babados" loading="eager" decoding="async"></div>
+<div class="sewing-body">
+<span class="sewing-ref">REFERÊNCIA 01</span>
+<h3>Vestido floral com babados</h3>
+<div class="sewing-tags"><span>Manga com babado</span><span>Saia rodada</span><span>Estampa floral</span><span>Laço frontal</span></div>
+<p>Use como inspiração visual para analisar detalhes do modelo e adaptar à sua própria confecção.</p>
+</div></article><article class="sewing-slide">
+<div class="sewing-photo"><img src="https://www.mamasandpapas.com/cdn/shop/files/mamas-papas-outfits-sets-rust-shirt-shorts-outfit-set-1225892980_2000x.jpg?v=1773324729" alt="Conjunto social menino" loading="eager" decoding="async"></div>
+<div class="sewing-body">
+<span class="sewing-ref">REFERÊNCIA 02</span>
+<h3>Conjunto social menino</h3>
+<div class="sewing-tags"><span>Camisa estruturada</span><span>Bermuda reta</span><span>Gola clássica</span><span>Look social</span></div>
+<p>Use como inspiração visual para analisar detalhes do modelo e adaptar à sua própria confecção.</p>
+</div></article><article class="sewing-slide">
+<div class="sewing-photo"><img src="https://includ.com/cdn/shop/files/30019d81-03e0-49c0-8a63-47586d273fe9O1CN01Nn4MdI1IIxiU9Yg70__21_212456580871-0-cib_d418ad6e-3c5f-481b-b137-d93557d79594.jpg?v=1743065444&width=1200" alt="Blusa + shorts" loading="lazy" decoding="async"></div>
+<div class="sewing-body">
+<span class="sewing-ref">REFERÊNCIA 03</span>
+<h3>Blusa + shorts</h3>
+<div class="sewing-tags"><span>Blusa franzida</span><span>Short com laço</span><span>Detalhe bordado</span><span>Conjunto casual</span></div>
+<p>Use como inspiração visual para analisar detalhes do modelo e adaptar à sua própria confecção.</p>
+</div></article><article class="sewing-slide">
+<div class="sewing-photo"><img src="https://foreveryoungboutiquela.com/cdn/shop/products/BTKA_16915093003574321_7af6def5aac8867cf8d61f3e9b9be6_1024x1024.jpg?v=1691978704" alt="Macaquinho infantil" loading="lazy" decoding="async"></div>
+<div class="sewing-body">
+<span class="sewing-ref">REFERÊNCIA 04</span>
+<h3>Macaquinho infantil</h3>
+<div class="sewing-tags"><span>Alças com botão</span><span>Bolso frontal</span><span>Modelagem soltinha</span><span>Peça única</span></div>
+<p>Use como inspiração visual para analisar detalhes do modelo e adaptar à sua própria confecção.</p>
+</div></article><article class="sewing-slide">
+<div class="sewing-photo"><img src="https://images.pexels.com/photos/37904241/pexels-photo-37904241/free-photo-of-charming-baby-clothes-display-with-toys-and-flowers.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Vestidos delicados" loading="lazy" decoding="async"></div>
+<div class="sewing-body">
+<span class="sewing-ref">REFERÊNCIA 05</span>
+<h3>Vestidos delicados</h3>
+<div class="sewing-tags"><span>Cores suaves</span><span>Volume de saia</span><span>Detalhes delicados</span><span>Composição infantil</span></div>
+<p>Use como inspiração visual para analisar detalhes do modelo e adaptar à sua própria confecção.</p>
+</div></article><article class="sewing-slide">
+<div class="sewing-photo"><img src="https://images.pexels.com/photos/36276517/pexels-photo-36276517.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Looks de cabide" loading="lazy" decoding="async"></div>
+<div class="sewing-body">
+<span class="sewing-ref">REFERÊNCIA 06</span>
+<h3>Looks de cabide</h3>
+<div class="sewing-tags"><span>Modelos variados</span><span>Combinação de peças</span><span>Caimento</span><span>Inspiração de coleção</span></div>
+<p>Use como inspiração visual para analisar detalhes do modelo e adaptar à sua própria confecção.</p>
+</div></article><article class="sewing-slide">
+<div class="sewing-photo"><img src="https://images.pexels.com/photos/28907988/pexels-photo-28907988.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Conjuntos e sobreposições" loading="lazy" decoding="async"></div>
+<div class="sewing-body">
+<span class="sewing-ref">REFERÊNCIA 07</span>
+<h3>Conjuntos e sobreposições</h3>
+<div class="sewing-tags"><span>Camadas</span><span>Cores coordenadas</span><span>Peças combinadas</span><span>Acabamentos</span></div>
+<p>Use como inspiração visual para analisar detalhes do modelo e adaptar à sua própria confecção.</p>
+</div></article><article class="sewing-slide">
+<div class="sewing-photo"><img src="https://images.pexels.com/photos/15625985/pexels-photo-15625985.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Vestidos de ocasião" loading="lazy" decoding="async"></div>
+<div class="sewing-body">
+<span class="sewing-ref">REFERÊNCIA 08</span>
+<h3>Vestidos de ocasião</h3>
+<div class="sewing-tags"><span>Vestido pronto</span><span>Detalhes de festa</span><span>Silhueta</span><span>Acabamento</span></div>
+<p>Use como inspiração visual para analisar detalhes do modelo e adaptar à sua própria confecção.</p>
+</div></article><article class="sewing-slide">
+<div class="sewing-photo"><img src="https://images.pexels.com/photos/6653661/pexels-photo-6653661.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Referência de tecidos e cores" loading="lazy" decoding="async"></div>
+<div class="sewing-body">
+<span class="sewing-ref">REFERÊNCIA 09</span>
+<h3>Referência de tecidos e cores</h3>
+<div class="sewing-tags"><span>Paleta</span><span>Texturas</span><span>Combinações</span><span>Aplicações</span></div>
+<p>Use como inspiração visual para analisar detalhes do modelo e adaptar à sua própria confecção.</p>
+</div></article><article class="sewing-slide">
+<div class="sewing-photo"><img src="https://images.pexels.com/photos/30902519/pexels-photo-30902519.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Detalhes de confecção" loading="lazy" decoding="async"></div>
+<div class="sewing-body">
+<span class="sewing-ref">REFERÊNCIA 10</span>
+<h3>Detalhes de confecção</h3>
+<div class="sewing-tags"><span>Costura</span><span>Acabamento</span><span>Detalhes</span><span>Inspiração técnica</span></div>
+<p>Use como inspiração visual para analisar detalhes do modelo e adaptar à sua própria confecção.</p>
+</div></article>
 </div>
-<section><div class="wrap"><span class="kicker">Para quem é</span><h2>Feita para quem ama criar roupas infantis</h2><div class="cards"><div class="card"><div class="card-mark">01</div><h3>Costureiras e artesãs</h3><p>Que desejam encontrar referências de estilos e detalhes com mais facilidade.</p></div><div class="card"><div class="card-mark">02</div><h3>Quem está começando</h3><p>Que procura ideias para estudar combinações e desenvolver o próprio olhar criativo.</p></div><div class="card"><div class="card-mark">03</div><h3>Quem trabalha com moda infantil</h3><p>Que gosta de pesquisar inspirações antes de desenvolver novas peças.</p></div></div></div></section>
-<section class="soft"><div class="wrap"><span class="kicker">Exclusivos do premium</span><h2>Cinco bônus visuais e práticos</h2><p class="center">Agora cada bônus tem uma imagem diretamente relacionada ao conteúdo.</p>
-<div class="bonus-photo-list">
-<article class="bonus-photo-card"><img src="https://images.pexels.com/photos/6653661/pexels-photo-6653661.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Bônus 1 — Cores e combinações" loading="lazy" decoding="async"><div><b>Bônus 1 — Cores e combinações</b><p>Paletas de tons e tecidos para coordenar cada criação.</p></div></article><article class="bonus-photo-card"><img src="https://images.pexels.com/photos/9849318/pexels-photo-9849318.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Bônus 2 — Ficha de inspiração" loading="lazy" decoding="async"><div><b>Bônus 2 — Ficha de inspiração</b><p>Organize suas ideias, referências e detalhes antes de começar.</p></div></article><article class="bonus-photo-card"><img src="https://images.pexels.com/photos/37904241/pexels-photo-37904241.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Bônus 3 — Ocasiões e looks coordenados" loading="lazy" decoding="async"><div><b>Bônus 3 — Ocasiões e looks coordenados</b><p>Exemplos de peças prontas para visualizar combinações completas.</p></div></article><article class="bonus-photo-card"><img src="https://www.clementineandmint.com/cdn/shop/files/childs-pink-hair-bows.jpg?crop=center&height=900&v=1756628039&width=900" alt="Bônus 4 — Guia de laços infantis" loading="lazy" decoding="async"><div><b>Bônus 4 — Guia de laços infantis</b><p>Modelos de laços e formas de aplicar em vestidos, conjuntos e acessórios.</p></div></article><article class="bonus-photo-card"><img src="https://images.pexels.com/photos/30902519/pexels-photo-30902519.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Bônus 5 — Detalhes e acabamentos" loading="lazy" decoding="async"><div><b>Bônus 5 — Detalhes e acabamentos</b><p>Costuras, barras e acabamentos vistos de perto para facilitar a inspiração.</p></div></article>
-</div></div></section>
-<section id="planos"><div class="wrap"><span class="kicker">Escolha sua versão</span><h2>O melhor da moda infantil em referências visuais</h2><p class="center">Para meninos, meninas e roupas unissex: diferentes estilos e ocasiões.</p><div class="plans">
+<div class="carousel-controls"><button type="button" id="sewingPrev" aria-label="Anterior">‹</button><div class="carousel-count" id="sewingCount">1 / 10</div><button type="button" id="sewingNext" aria-label="Próximo">›</button></div>
+<div class="carousel-hint">Deslize para o lado para ver as 10 referências</div>
+</div><section><div class="wrap"><span class="kicker">Para quem é</span><h2>Feita para quem ama criar roupas infantis</h2><div class="cards"><div class="card"><div class="card-mark">01</div><h3>Costureiras e artesãs</h3><p>Que desejam encontrar referências de estilos e detalhes com mais facilidade.</p></div><div class="card"><div class="card-mark">02</div><h3>Quem está começando</h3><p>Que procura ideias para estudar combinações e desenvolver o próprio olhar criativo.</p></div><div class="card"><div class="card-mark">03</div><h3>Quem trabalha com moda infantil</h3><p>Que gosta de pesquisar inspirações antes de desenvolver novas peças.</p></div></div></div></section>
+<section class="soft"><div class="wrap"><span class="kicker">Exclusivos do premium</span><h2>Cinco bônus visuais e úteis</h2><p class="center">Imagens simples, bonitas e diretamente ligadas ao conteúdo de cada bônus.</p>
+<div class="bonus-grid-v4">
+<article class="bonus-card-v4"><div class="bonus-art-v4"><svg viewBox="0 0 120 90"><rect x="10" y="15" width="40" height="55" rx="6" fill="#f2c7d2"/><rect x="38" y="20" width="40" height="55" rx="6" fill="#e49eb3"/><rect x="66" y="15" width="40" height="55" rx="6" fill="#b86882"/><circle cx="25" cy="30" r="7" fill="#fff0ea"/><circle cx="53" cy="38" r="7" fill="#dfc3a8"/><circle cx="82" cy="30" r="7" fill="#9cad89"/></svg></div><div><b>Bônus 1 — Cores e combinações</b><p>Paletas para combinar tecidos, tons e detalhes.</p></div></article><article class="bonus-card-v4"><div class="bonus-art-v4"><svg viewBox="0 0 120 90"><rect x="26" y="10" width="68" height="70" rx="8" fill="#fff" stroke="#a75c75" stroke-width="4"/><rect x="45" y="5" width="30" height="12" rx="6" fill="#c77690"/><path d="M42 34h34M42 47h38M42 60h29" stroke="#805361" stroke-width="4" stroke-linecap="round"/><path d="M34 33l5 5 7-8M34 58l5 5 7-8" fill="none" stroke="#c76380" stroke-width="4" stroke-linecap="round"/></svg></div><div><b>Bônus 2 — Ficha de inspiração</b><p>Espaço para organizar modelo, tecido e observações.</p></div></article><article class="bonus-card-v4"><div class="bonus-art-v4"><svg viewBox="0 0 120 90"><path d="M20 20l24 11-10 17-12-6-10 25 22 10 15-26-11-5 10-17z" fill="#f0c8d2" stroke="#845263" stroke-width="2"/><path d="M70 18l22 10-9 16-11-5-12 27 22 10 14-28-10-5 9-17z" fill="#cfdbea" stroke="#667a91" stroke-width="2"/></svg></div><div><b>Bônus 3 — Looks coordenados</b><p>Ideias de combinações para diferentes ocasiões.</p></div></article><article class="bonus-card-v4"><div class="bonus-art-v4"><svg viewBox="0 0 120 90"><path d="M58 43C38 18 16 23 17 41c1 14 17 18 41 8M62 43c20-25 42-20 41-2-1 14-17 18-41 8" fill="#e9a0b6" stroke="#98536a" stroke-width="3"/><rect x="52" y="35" width="16" height="20" rx="5" fill="#bd6b83"/><path d="M54 53l-15 25 21-10M66 53l15 25-21-10" fill="#e9a0b6" stroke="#98536a" stroke-width="3"/></svg></div><div><b>Bônus 4 — Guia de laços</b><p>Modelos de laços e formas de aplicação nas peças.</p></div></article><article class="bonus-card-v4"><div class="bonus-art-v4"><svg viewBox="0 0 120 90"><path d="M20 56h58v22H20z" fill="#e4b2c1"/><path d="M32 16h38c10 0 18 8 18 18v22H32z" fill="#fff" stroke="#95566b" stroke-width="4"/><circle cx="52" cy="33" r="8" fill="#d77d98"/><path d="M59 56v20M70 43h14M24 80h72" stroke="#714957" stroke-width="4"/></svg></div><div><b>Bônus 5 — Acabamentos</b><p>Referências de barras, franzidos, rendas e finalizações.</p></div></article>
+</div></div></section><section id="planos"><div class="wrap"><span class="kicker">Escolha sua versão</span><h2>O melhor da moda infantil em referências visuais</h2><p class="center">Para meninos, meninas e roupas unissex: diferentes estilos e ocasiões.</p><div class="plans">
 <div class="plan"><h3>Cartilha Básica</h3><p>Para começar suas inspirações</p><div class="price">R$ 7,90</div><ul><li><b>60 referências</b> de roupas infantis</li><li>Vestidos, conjuntos e looks variados</li><li>Formato digital para consultar</li><li>Sem acesso aos bônus</li></ul><button type="button" data-plan="essencial">QUERO 60 REFERÊNCIAS</button><small>Checkout ainda não configurado</small></div>
 <div class="plan featured"><div class="flag">MAIS VANTAJOSO • 5 BÔNUS</div><h3>Cartilha Premium</h3><p>O dobro de referências + guias extras</p><div class="premium-product-shot"><img src="assets/mockup-pequenos-looks.webp" alt="Mockup da versão premium Pequenos Looks" width="1200" height="900" loading="lazy" decoding="async"></div><div class="price">R$ 19,90</div><ul><li><b>120 referências</b> de roupas infantis</li><li>Peças femininas, masculinas e unissex</li><li>Looks de festa, casuais e conjuntos</li><li><b>5 bônus inclusos</b>, com laços e acabamentos</li><li>Cartilha digital para consultar</li></ul><button type="button" data-plan="completa">QUERO A VERSÃO PREMIUM</button><small>Checkout ainda não configurado</small></div>
 </div><p class="notice"><b>Importante:</b> página demonstrativa. As 60/120 referências e os cinco bônus são entregáveis planejados, ainda a produzir e revisar antes das vendas. Não são moldes técnicos de costura.</p></div></section>
 <section class="guarantee"><div class="wrap"><div class="shield">♢</div><span class="kicker">Compra protegida</span><h2>Garantia de 7 dias</h2><p class="center">Nas compras realizadas online, você pode exercer o direito de arrependimento dentro de 7 dias corridos, conforme a legislação aplicável.</p><p class="center" style="font-size:10px">O procedimento de solicitação e o contato de atendimento devem acompanhar o checkout final.</p></div></section>
-<section class="soft ready-section"><div class="wrap"><span class="kicker">Ideias para se inspirar</span><h2>Roupas infantis para diferentes estilos</h2><p class="center">Aqui entram roupas já confeccionadas, para você visualizar como as referências podem ganhar vida depois da costura.</p>
-<div class="ready-grid">
-<figure><div class="ready-img"><img src="https://images.pexels.com/photos/37904241/pexels-photo-37904241/free-photo-of-charming-baby-clothes-display-with-toys-and-flowers.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Roupas infantis prontas em composição de loja" loading="lazy" decoding="async"></div><figcaption>Looks delicados</figcaption><small>Peças prontas e coordenadas</small></figure>
-<figure><div class="ready-img"><img src="https://images.pexels.com/photos/36276517/pexels-photo-36276517.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Roupas infantis prontas em cabides" loading="lazy" decoding="async"></div><figcaption>Peças para o dia a dia</figcaption><small>Modelos confortáveis e versáteis</small></figure>
-<figure><div class="ready-img"><img src="https://images.pexels.com/photos/28907988/pexels-photo-28907988.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Roupas infantis prontas organizadas em cabides" loading="lazy" decoding="async"></div><figcaption>Conjuntos e sobreposições</figcaption><small>Combinações infantis variadas</small></figure>
-<figure><div class="ready-img"><img src="https://images.pexels.com/photos/15625985/pexels-photo-15625985.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Vestidos infantis prontos em loja" loading="lazy" decoding="async"></div><figcaption>Vestidos e ocasiões especiais</figcaption><small>Referências de peças finalizadas</small></figure>
-</div></div></section>
-<section class="soft"><div class="wrap faq"><span class="kicker">Dúvidas frequentes</span><h2>Perguntas e respostas</h2><details><summary>O que recebo ao adquirir a cartilha?</summary><p>Uma cartilha digital de referências visuais de roupas infantis, de acordo com o plano escolhido, após a produção e habilitação da entrega.</p></details><details><summary>São moldes prontos para imprimir e cortar?</summary><p>Não. A cartilha reúne referências e inspirações visuais; não inclui moldes técnicos, medidas ou instruções de costura passo a passo.</p></details><details><summary>Preciso ter experiência com costura?</summary><p>Não para consultar as inspirações. Para produzir as peças, é necessário conhecimento de modelagem e costura.</p></details><details><summary>Posso acessar pelo celular?</summary><p>Sim, o formato digital foi pensado para consulta no celular ou computador.</p></details><details><summary>Como faço para comprar?</summary><p>Os botões de compra serão habilitados quando os links de pagamento, os arquivos finais e a entrega estiverem configurados.</p></details></div></section>
+<section class="soft ready-section"><div class="wrap"><span class="kicker">Ideias para se inspirar</span><h2>Roupas infantis para diferentes estilos</h2><p class="center">Um segundo carrossel com 8 imagens de peças já prontas para visualizar diferentes estilos, combinações e acabamentos.</p></div>
+<div class="ready-carousel">
+<div class="ready-track" id="readyTrack">
+<figure class="ready-slide"><div class="ready-photo"><img src="https://jujujam.in/cdn/shop/files/Floral_Fantasy_Girls_Dress_With_Sling_Bag_2.jpg?v=1753950246&width=1200" alt="Vestido floral com babados" loading="lazy" decoding="async"></div><figcaption>Vestido floral com babados</figcaption><small>Peça pronta para inspiração visual</small></figure><figure class="ready-slide"><div class="ready-photo"><img src="https://www.mamasandpapas.com/cdn/shop/files/mamas-papas-outfits-sets-rust-shirt-shorts-outfit-set-1225892980_2000x.jpg?v=1773324729" alt="Conjunto social menino" loading="lazy" decoding="async"></div><figcaption>Conjunto social menino</figcaption><small>Peça pronta para inspiração visual</small></figure><figure class="ready-slide"><div class="ready-photo"><img src="https://includ.com/cdn/shop/files/30019d81-03e0-49c0-8a63-47586d273fe9O1CN01Nn4MdI1IIxiU9Yg70__21_212456580871-0-cib_d418ad6e-3c5f-481b-b137-d93557d79594.jpg?v=1743065444&width=1200" alt="Blusa + shorts" loading="lazy" decoding="async"></div><figcaption>Blusa + shorts</figcaption><small>Peça pronta para inspiração visual</small></figure><figure class="ready-slide"><div class="ready-photo"><img src="https://foreveryoungboutiquela.com/cdn/shop/products/BTKA_16915093003574321_7af6def5aac8867cf8d61f3e9b9be6_1024x1024.jpg?v=1691978704" alt="Macaquinho infantil" loading="lazy" decoding="async"></div><figcaption>Macaquinho infantil</figcaption><small>Peça pronta para inspiração visual</small></figure><figure class="ready-slide"><div class="ready-photo"><img src="https://images.pexels.com/photos/37904241/pexels-photo-37904241/free-photo-of-charming-baby-clothes-display-with-toys-and-flowers.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Vestidos delicados" loading="lazy" decoding="async"></div><figcaption>Vestidos delicados</figcaption><small>Peça pronta para inspiração visual</small></figure><figure class="ready-slide"><div class="ready-photo"><img src="https://images.pexels.com/photos/36276517/pexels-photo-36276517.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Looks de cabide" loading="lazy" decoding="async"></div><figcaption>Looks de cabide</figcaption><small>Peça pronta para inspiração visual</small></figure><figure class="ready-slide"><div class="ready-photo"><img src="https://images.pexels.com/photos/28907988/pexels-photo-28907988.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Conjuntos e sobreposições" loading="lazy" decoding="async"></div><figcaption>Conjuntos e sobreposições</figcaption><small>Peça pronta para inspiração visual</small></figure><figure class="ready-slide"><div class="ready-photo"><img src="https://images.pexels.com/photos/15625985/pexels-photo-15625985.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Vestidos de ocasião" loading="lazy" decoding="async"></div><figcaption>Vestidos de ocasião</figcaption><small>Peça pronta para inspiração visual</small></figure>
+</div>
+<div class="carousel-controls"><button type="button" id="readyPrev" aria-label="Anterior">‹</button><div class="carousel-count" id="readyCount">1 / 8</div><button type="button" id="readyNext" aria-label="Próximo">›</button></div>
+<div class="carousel-hint">Deslize para ver os 8 estilos</div>
+</div></section><section class="soft"><div class="wrap faq"><span class="kicker">Dúvidas frequentes</span><h2>Perguntas e respostas</h2><details><summary>O que recebo ao adquirir a cartilha?</summary><p>Uma cartilha digital de referências visuais de roupas infantis, de acordo com o plano escolhido, após a produção e habilitação da entrega.</p></details><details><summary>São moldes prontos para imprimir e cortar?</summary><p>Não. A cartilha reúne referências e inspirações visuais; não inclui moldes técnicos, medidas ou instruções de costura passo a passo.</p></details><details><summary>Preciso ter experiência com costura?</summary><p>Não para consultar as inspirações. Para produzir as peças, é necessário conhecimento de modelagem e costura.</p></details><details><summary>Posso acessar pelo celular?</summary><p>Sim, o formato digital foi pensado para consulta no celular ou computador.</p></details><details><summary>Como faço para comprar?</summary><p>Os botões de compra serão habilitados quando os links de pagamento, os arquivos finais e a entrega estiverem configurados.</p></details></div></section>
 </main><footer><strong>Pequenos Looks ♡</strong>Cartilha digital de referências infantis<br>Imagens e páginas exibidas são demonstrações ilustrativas.<br>© 2026 Pequenos Looks</footer>
 <div id="toast" class="toast" role="alertdialog" aria-live="polite"><b>Checkout ainda não disponível</b><div style="margin-top:5px">Adicione o link do plano e finalize os materiais antes de habilitar as compras.</div><button type="button" id="closeToast">ENTENDI</button></div>
 <script>
@@ -226,4 +279,15 @@ const CONFIG={essencial:{checkout:""},completa:{checkout:""}};
 document.querySelectorAll("[data-plan]").forEach(btn=>btn.addEventListener("click",()=>{const url=CONFIG[btn.dataset.plan].checkout;if(/^https:\/\//.test(url)){window.location.href=url}else document.getElementById("toast").classList.add("show")}));document.getElementById("closeToast").onclick=()=>document.getElementById("toast").classList.remove("show");
 </script>
 
-<script id="tech-carousel-js">(()=>{const t=document.getElementById('techTrack'),prev=document.getElementById('techPrev'),next=document.getElementById('techNext'),c=document.getElementById('techCount');if(!t||!prev||!next||!c)return;const slides=[...t.children];if(!slides.length)return;const step=()=>slides[0].getBoundingClientRect().width+14;const idx=()=>Math.max(0,Math.min(slides.length-1,Math.round(t.scrollLeft/step())));const sync=()=>{c.textContent=(idx()+1)+' / '+slides.length};const go=n=>t.scrollTo({left:n*step(),behavior:'smooth'});next.onclick=()=>{const i=idx();go(i>=slides.length-1?0:i+1)};prev.onclick=()=>{const i=idx();go(i<=0?slides.length-1:i-1)};t.addEventListener('scroll',()=>requestAnimationFrame(sync),{passive:true});let timer=null;const stop=()=>{if(timer){clearInterval(timer);timer=null}};const start=()=>{if(window.matchMedia('(prefers-reduced-motion: reduce)').matches||document.hidden)return;stop();timer=setInterval(()=>next.click(),5000)};t.addEventListener('pointerdown',stop,{passive:true});t.addEventListener('pointerup',start,{passive:true});document.addEventListener('visibilitychange',()=>document.hidden?stop():start());sync();start()})();</script></body></html>
+<script id="tech-carousel-js">(()=>{const t=document.getElementById('techTrack'),prev=document.getElementById('techPrev'),next=document.getElementById('techNext'),c=document.getElementById('techCount');if(!t||!prev||!next||!c)return;const slides=[...t.children];if(!slides.length)return;const step=()=>slides[0].getBoundingClientRect().width+14;const idx=()=>Math.max(0,Math.min(slides.length-1,Math.round(t.scrollLeft/step())));const sync=()=>{c.textContent=(idx()+1)+' / '+slides.length};const go=n=>t.scrollTo({left:n*step(),behavior:'smooth'});next.onclick=()=>{const i=idx();go(i>=slides.length-1?0:i+1)};prev.onclick=()=>{const i=idx();go(i<=0?slides.length-1:i-1)};t.addEventListener('scroll',()=>requestAnimationFrame(sync),{passive:true});let timer=null;const stop=()=>{if(timer){clearInterval(timer);timer=null}};const start=()=>{if(window.matchMedia('(prefers-reduced-motion: reduce)').matches||document.hidden)return;stop();timer=setInterval(()=>next.click(),5000)};t.addEventListener('pointerdown',stop,{passive:true});t.addEventListener('pointerup',start,{passive:true});document.addEventListener('visibilitychange',()=>document.hidden?stop():start());sync();start()})();</script><script id="multi-carousel-v5">(()=>{
+function setup(trackId,prevId,nextId,countId){
+ const t=document.getElementById(trackId),p=document.getElementById(prevId),n=document.getElementById(nextId),c=document.getElementById(countId);
+ if(!t||!p||!n||!c)return;const slides=[...t.children];if(!slides.length)return;
+ const gap=14;const step=()=>slides[0].getBoundingClientRect().width+gap;const idx=()=>Math.max(0,Math.min(slides.length-1,Math.round(t.scrollLeft/step())));
+ const sync=()=>c.textContent=(idx()+1)+' / '+slides.length;const go=i=>t.scrollTo({left:i*step(),behavior:'smooth'});
+ n.onclick=()=>{const i=idx();go(i>=slides.length-1?0:i+1)};p.onclick=()=>{const i=idx();go(i<=0?slides.length-1:i-1)};
+ t.addEventListener('scroll',()=>requestAnimationFrame(sync),{passive:true});sync();
+}
+setup('sewingTrack','sewingPrev','sewingNext','sewingCount');
+setup('readyTrack','readyPrev','readyNext','readyCount');
+})();</script></body></html>
